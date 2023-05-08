@@ -68,22 +68,26 @@ function NoticeList() {
                             <div ref={containerRef} className="row">
                                 {items.map((review) => (
                                     <div
-                                        key={items.id}
+                                        key={review.id}
                                         className="col"
+                                        sm={6}
+                                        xs={6}
                                         onClick={() =>
                                             onClickToDetail(review.id)
                                         }
                                     >
                                         {review.images.length !== 0 ? (
                                             <img
-                                                src={review.images[0].image}
+                                                src={`http://localhost:8000${review.images[0].image}`}
                                                 className="noticeImg"
+                                                alt="thumnail"
                                             />
                                         ) : (
                                             <img
                                                 src={default_img}
                                                 className="noticeImg"
-                                            ></img>
+                                                alt="dafault_img"
+                                            />
                                         )}
 
                                         <div className="noticeTitle">
@@ -109,7 +113,7 @@ function NoticeList() {
                             <div className="row" ref={containerRef}>
                                 {items.map((review) => (
                                     <div
-                                        key={items.id}
+                                        key={review.id}
                                         className="col"
                                         sm={6}
                                         xs={6}
@@ -119,13 +123,15 @@ function NoticeList() {
                                     >
                                         {review.images.length !== 0 ? (
                                             <img
-                                                src={review.images[0].image}
+                                                src={`http://localhost:8000${review.images[0].image}`}
                                                 className="noticeImg"
+                                                alt="thumnail"
                                             />
                                         ) : (
                                             <img
                                                 src={default_img}
                                                 className="noticeImg"
+                                                alt="default"
                                             ></img>
                                         )}
                                         <div className="noticeTitle">

@@ -8,6 +8,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import default_img from '../../img/default_image.jpg';
 
+const DEFAULT_IMG_URL = 'http://localhost:8000';
+
 const NoticeImg = styled.img`
     width: 310px;
     height: 310px;
@@ -66,7 +68,10 @@ function NoticeDetail() {
                 <Slider {...settings}>
                     {detail.images && detail.images.length > 0 ? (
                         detail.images.map((review) => (
-                            <NoticeImg src={review.image} />
+                            <NoticeImg
+                                src={`${DEFAULT_IMG_URL}${review.image}`}
+                                key={review.id}
+                            />
                         ))
                     ) : (
                         <NoticeImg src={default_img} />
