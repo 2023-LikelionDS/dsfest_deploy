@@ -13,14 +13,12 @@
 
 @media (min-width: 768px) {
     .writeReview {
-        padding-top: 58px;
         margin: 0 auto;
         width: 375px;
         background-color: #fff8fb;
     }
 }
 .writeReview {
-    padding-top: 58px;
     background-color: #fff8fb;
     display: flex;
     flex-direction: column;
