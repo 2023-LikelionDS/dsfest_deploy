@@ -26,10 +26,7 @@ const Menubar = () => {
 
     return (
         <div>
-            <div
-                className={`menubar ${menuActive ? 'active' : ''}`}
-                onClick={MenuStateHandle}
-            >
+            <div className={`menubar ${menuActive ? 'active' : ''}`}>
                 <div className="HeaderTop">
                     <Link className="FesLogoLink" to="/">
                         <img src={FesLogo} alt="로고" />
