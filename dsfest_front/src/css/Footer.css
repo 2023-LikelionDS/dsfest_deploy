@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
     .footerContainer {
         margin: 0 auto;
-        width: 375px;
+        width: 375px !important;
         background-color: #986d9e;
     }
 }
@@ -13,6 +13,7 @@
     align-items: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    width: 100vw;
 }
 
 .title {

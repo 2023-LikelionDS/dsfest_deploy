@@ -6,7 +6,7 @@ import '../css/EventPage.css';
 
 function EventPage() {
     return (
-        <div className="insertBody">
+        <div className="eventBody">
             <div className="eventtitle">낭만에 대하여</div>
             <EventPoster />
             <EventForm />

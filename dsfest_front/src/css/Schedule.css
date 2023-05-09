@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.nav {
+.schedule_nav {
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
@@ -74,7 +74,7 @@
 }
 
 @media (max-width: 580px) {
-    .nav {
+    .schedule_nav {
         overflow: auto;
     }
 }

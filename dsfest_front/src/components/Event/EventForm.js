@@ -3,10 +3,11 @@ import axios from 'axios';
 import '../../css/EventPage.css';
 
 function EventForm() {
+    const [author, setAuthor] = useState('');
     const [content, setContent] = useState('');
 
     const handleSubmit = (e) => {
-        const newNangman = { content: content };
+        const newNangman = { author, content };
 
         axios
             .post('http://localhost:8000/event/', newNangman)
@@ -47,15 +48,17 @@ function EventForm() {
                 <form className="form_inner" onSubmit={handleSubmit}>
                     <input
                         type="text"
-                        onChange={(e) => setContent(e.target.value)}
+                        value={author}
+                        onChange={(e) => setAuthor(e.target.value)}
                         className="form_writer"
                         placeholder="이름"
-                    ></input>
+                    />
                     <textarea
                         value={content}
+                        onChange={(e) => setContent(e.target.value)}
                         className="insert"
                         placeholder="나에게 낭만이란?"
-                    ></textarea>
+                    />
                     <button className="submitbtn" type="submit">
                         낭만 작성 완료
                     </button>

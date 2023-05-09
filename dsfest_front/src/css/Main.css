@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    .mainBody {
+        margin: 0 auto;
+        width: 375px;
+        background-color: #fff8fb;
+    }
+}
+
+.mainBody {
+    background-color: #fff8fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

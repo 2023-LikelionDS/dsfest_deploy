@@ -1,11 +1,23 @@
 @media (min-width: 768px) {
-    .insertBody {
+    .eventBody {
         margin: 0 auto;
         width: 375px;
         background-color: #fff8fb;
     }
 }
-.insertBody {
+.eventBody {
+    background-color: #fff8fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 416px) and (max-width: 768px) {
+    .posterimg {
+        width: 327px !important;
+        height: 460px !important;
+    }
+}
+.eventBody {
     background-color: #fff8fb;
     display: flex;
     flex-direction: column;

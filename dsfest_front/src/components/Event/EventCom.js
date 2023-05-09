@@ -50,12 +50,13 @@ function EventCom() {
                 </div>
                 <div className="line3"></div>
                 <ul>
-                    {/* {nangmans.map((review) => (
-                        <div className="comment" nakey={review.id}>
-                            <li>{review.content}</li>
+                    {nangmans.map((event) => (
+                        <div className="comment" nakey={event.id}>
+                            <li>{event.author}</li>
+                            <li>{event.content}</li>
                             <div className="line3"></div>
                         </div>
-                    ))} */}
+                    ))}
                 </ul>
             </div>
         </div>

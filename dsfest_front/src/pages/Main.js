@@ -1,14 +1,9 @@
 import React from 'react';
-import Footer from '../components/Main/Footer';
-import Navbar from '../components/Main/Navbar';
+
+import '../css/Main.css';
 
 function Main() {
-    return (
-        <>
-            <Navbar />
-            <Footer />
-        </>
-    );
+    return <div className="mainBody">메인 콘텐츠가 들어갈 곳입니다.</div>;
 }
 
 export default Main;

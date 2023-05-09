@@ -34,7 +34,7 @@ function Menu() {
     }, []);
     return (
         <>
-            <nav className="nav">
+            <nav className="schedule_nav">
                 <div
                     className="nav-item"
                     data-active-color="gold"
