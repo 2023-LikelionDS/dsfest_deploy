@@ -78,7 +78,7 @@ function NoticeList() {
                                     >
                                         {review.images.length !== 0 ? (
                                             <img
-                                                src={`http://localhost:8000${review.images[0].image}`}
+                                                src={`${review.images[0].image}`}
                                                 className="noticeImg"
                                                 alt="thumnail"
                                             />
@@ -123,7 +123,7 @@ function NoticeList() {
                                     >
                                         {review.images.length !== 0 ? (
                                             <img
-                                                src={`http://localhost:8000${review.images[0].image}`}
+                                                src={`${review.images[0].image}`}
                                                 className="noticeImg"
                                                 alt="thumnail"
                                             />
