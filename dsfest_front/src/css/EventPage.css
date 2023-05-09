@@ -223,3 +223,7 @@
     border: 0.5px solid #838383;
 }
 /* EventCom 컴포넌트에 대한 스타일 */
+
+textarea {
+    white-space: pre-wrap;
+}

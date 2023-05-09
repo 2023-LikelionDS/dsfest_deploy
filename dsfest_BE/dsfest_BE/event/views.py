@@ -20,8 +20,8 @@ class PostList(APIView):
         if serializer.is_valid(): # 유효성 검사
             content = serializer.validated_data.get("content")
 
-            if (word in SWEAR_WORDS for word in content):
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            # if (word in SWEAR_WORDS for word in content):
+            #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
             serializer.save() #저장
             return Response(serializer.data, status=status.HTTP_201_CREATED)
