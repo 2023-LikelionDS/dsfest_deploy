@@ -69,7 +69,7 @@ function NoticeDetail() {
                     {detail.images && detail.images.length > 0 ? (
                         detail.images.map((review) => (
                             <NoticeImg
-                                src={`${review.image}`}
+                                src={`${DEFAULT_IMG_URL}${review.image}`}
                                 key={review.id}
                             />
                         ))
