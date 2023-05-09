@@ -17,7 +17,6 @@ function Footer() {
                     <div className="header">기획</div>
                     <ul className="listDetail">
                         <li>김채이</li>
-                        <li>허은</li>
                     </ul>
                 </div>
 
@@ -50,7 +49,7 @@ function Footer() {
                             <li>권희원</li>
                             <li>김채현</li>
                             <li>노하림</li>
-                            <li>민유빈</li>
+                            <li>허 은</li>
                         </ul>
 
                         <li className="header2">Back-end</li>
@@ -60,7 +59,6 @@ function Footer() {
                             <li>이서진</li>
                             <li>장소영</li>
                             <li>한진경</li>
-                            <li>허 은</li>
                         </ul>
                     </ul>
                 </div>
