@@ -1,16 +1,19 @@
 @media (min-width: 768px) {
     .insertBody {
+        padding-top: 58px;
         margin: 0 auto;
         width: 375px;
         background-color: #fff8fb;
     }
 }
 .insertBody {
+    padding-top: 58px;
     background-color: #fff8fb;
     display: flex;
 
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /* NoticeList css  */

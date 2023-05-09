@@ -81,6 +81,10 @@ const Menubar = () => {
                     </ul>
                 </div>
             </div>
+            <div
+                className={menuActive ? 'navOverlayActive' : 'navOverlay'}
+                onClick={menuClose}
+            ></div>
         </div>
     );
 };
