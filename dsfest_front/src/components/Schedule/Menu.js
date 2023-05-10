@@ -5,10 +5,11 @@ import Take2 from './Take2';
 import Take3 from './Take3';
 function Menu() {
     const [status, setStatus] = useState(1);
+
     useEffect(() => {
         const indicator = document.querySelector('.nav-indicator');
         const items = document.querySelectorAll('.nav-item');
-
+        console.log(items[0]);
         function handleIndicator(el) {
             items.forEach((item) => {
                 item.classList.remove('is-active');
@@ -28,15 +29,14 @@ function Menu() {
             item.addEventListener('click', (e) => {
                 handleIndicator(e.target);
             });
-            item.classList.contains('is-active');
-            handleIndicator(item);
+            item.classList.contains('is-active') && handleIndicator(item);
         });
     }, []);
     return (
         <>
             <nav className="schedule_nav">
                 <div
-                    className="nav-item"
+                    className="nav-item is-active"
                     data-active-color="gold"
                     onClick={() => setStatus(1)}
                 >

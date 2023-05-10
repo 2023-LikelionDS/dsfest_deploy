@@ -23,7 +23,7 @@ const Num = styled.div`
 const TitleText = styled.p`
     font-weight: 700;
     color: #444;
-    font-size: 95%;
+    font-size: 90%;
 `;
 const Poster = styled.img`
     width: 250px;
@@ -46,15 +46,16 @@ const Table = styled.div`
     margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
+    width: 210px;
+    flex-wrap: wrap;
 `;
 const Card = styled.div`
     width: 100px;
     height: 80px;
     border: solid 2px rbg(159, 162, 177);
     border-radius: 10px;
-    box-shadow: 0 0px 10px rgba(159, 162, 177, 0.8);
+    box-shadow: 0 0px 5px rgba(159, 162, 177, 0.8);
     position: relative;
     box-sizing: border-box;
     padding-top: 10px;
@@ -93,14 +94,19 @@ function Take1() {
             </TimeTitle>
             <Table>
                 <Card>
-                    <p style={{ fontWeight: '900' }}>18:00</p>
-                    <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~20:00</p>
+                    <p style={{ fontWeight: '900' }}>15:00</p>
+                    <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~17:00</p>
+                    <Caption>영화 상영</Caption>
+                </Card>
+                <Card>
+                    <p style={{ fontWeight: '900' }}>20:00</p>
+                    <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~21:00</p>
                     <Caption>Chap1. The TAKE</Caption>
                 </Card>
                 <Card>
                     <p style={{ fontWeight: '900' }}>20:00</p>
                     <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~21:00</p>
-                    <Caption>DAY1. Artist</Caption>
+                    <Caption>DAY1 Artist</Caption>
                 </Card>
             </Table>
             <TimeTitle>
@@ -114,7 +120,7 @@ function Take1() {
                     <Caption>낮 수익사업</Caption>
                 </Card>
                 <Card>
-                    <p style={{ fontWeight: '900' }}>19:00</p>
+                    <p style={{ fontWeight: '900' }}>16:00</p>
                     <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~22:00</p>
                     <Caption>밤 수익사업</Caption>
                 </Card>

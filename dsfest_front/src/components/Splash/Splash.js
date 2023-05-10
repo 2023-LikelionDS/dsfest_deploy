@@ -141,6 +141,14 @@ function Splash() {
         function randomIntFromInterval(mn, mx) {
             return Math.floor(Math.random() * (mx - mn + 1) + mn);
         }
+
+        setTimeout(() => {
+            window.scrollTo({ top: 800, behavior: 'smooth' }); // 스크롤이 자동으로 이동되도록 함
+        }, 7000);
+
+        setTimeout(() => {
+            window.location.href = '/';
+        }, 15000);
     });
 
     return (

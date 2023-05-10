@@ -23,7 +23,7 @@ const Num = styled.div`
 const TitleText = styled.p`
     font-weight: 700;
     color: #444;
-    font-size: 95%;
+    font-size: 90%;
 `;
 const Poster = styled.img`
     width: 250px;
@@ -88,23 +88,23 @@ function Take2() {
                 <Bar />
             </Title>
             <TimeTitle>
-                <p style={{ color: 'goldenrod' }}>영근터 419관</p>
+                <p style={{ color: 'lightcoral' }}>영근터 419관</p>
                 <p>스탠딩|좌석</p>
             </TimeTitle>
             <Table>
                 <Card>
-                    <p style={{ fontWeight: '900' }}>18:00</p>
-                    <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~20:00</p>
-                    <Caption>Chap1. The TAKE</Caption>
+                    <p style={{ fontWeight: '900' }}>18:30</p>
+                    <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~20:30</p>
+                    <Caption>제40회 운현가요제</Caption>
                 </Card>
                 <Card>
                     <p style={{ fontWeight: '900' }}>20:00</p>
                     <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~21:00</p>
-                    <Caption>DAY. Artist</Caption>
+                    <Caption>DAY2 Artist</Caption>
                 </Card>
             </Table>
             <TimeTitle>
-                <p style={{ color: 'goldenrod' }}>Pop! Zone</p>
+                <p style={{ color: 'lightcoral' }}>Pop! Zone</p>
                 <p>4D|더빙</p>
             </TimeTitle>
             <Table>
@@ -114,7 +114,7 @@ function Take2() {
                     <Caption>낮 수익사업</Caption>
                 </Card>
                 <Card>
-                    <p style={{ fontWeight: '900' }}>19:00</p>
+                    <p style={{ fontWeight: '900' }}>16:00</p>
                     <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~22:00</p>
                     <Caption>밤 수익사업</Caption>
                 </Card>

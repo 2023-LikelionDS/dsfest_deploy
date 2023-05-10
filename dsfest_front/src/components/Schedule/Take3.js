@@ -46,32 +46,35 @@ const Table = styled.div`
     margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
+    width: 210px;
+    flex-wrap: wrap;
 `;
 const Card = styled.div`
     width: 100px;
-    height: 80px;
+    height: 100px;
     border: solid 2px rbg(159, 162, 177);
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0px 10px rgba(159, 162, 177, 0.8);
     position: relative;
     box-sizing: border-box;
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
 `;
 const Caption = styled.div`
     width: 100%;
-    height: 25px;
+    height: 35px;
     background-color: rgba(159, 162, 177, 0.2);
     position: absolute;
     bottom: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 5px;
     font-weight: 800;
     text-align: center;
-    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 function Take3() {
     return (
@@ -88,23 +91,28 @@ function Take3() {
                 <Bar />
             </Title>
             <TimeTitle>
-                <p style={{ color: 'goldenrod' }}>영근터 419관</p>
+                <p style={{ color: 'skyblue' }}>영근터 419관</p>
                 <p>스탠딩|좌석</p>
             </TimeTitle>
             <Table>
                 <Card>
-                    <p style={{ fontWeight: '900' }}>18:00</p>
-                    <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~20:00</p>
-                    <Caption>Chap1. The TAKE</Caption>
+                    <p style={{ fontWeight: '900' }}>15:00</p>
+                    <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~17:00</p>
+                    <Caption>Chap3. 우리가 써 내려갈 덕성의 한 페이지</Caption>
                 </Card>
                 <Card>
                     <p style={{ fontWeight: '900' }}>20:00</p>
                     <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~21:00</p>
-                    <Caption>DAY. Artist</Caption>
+                    <Caption>DAY3 Artist</Caption>
+                </Card>
+                <Card>
+                    <p style={{ fontWeight: '900' }}>20:00</p>
+                    <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~21:00</p>
+                    <Caption>불꽃놀이</Caption>
                 </Card>
             </Table>
             <TimeTitle>
-                <p style={{ color: 'goldenrod' }}>Pop! Zone</p>
+                <p style={{ color: 'skyblue' }}>Pop! Zone</p>
                 <p>4D|더빙</p>
             </TimeTitle>
             <Table>
@@ -114,7 +122,7 @@ function Take3() {
                     <Caption>낮 수익사업</Caption>
                 </Card>
                 <Card>
-                    <p style={{ fontWeight: '900' }}>19:00</p>
+                    <p style={{ fontWeight: '900' }}>16:00</p>
                     <p style={{ color: 'rgba(159, 162, 177, 0.8)' }}>~22:00</p>
                     <Caption>밤 수익사업</Caption>
                 </Card>
