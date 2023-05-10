@@ -34,6 +34,7 @@ function WriteReviewPage() {
 
     return (
         <div className="writeReview">
+            <div className="write-title">상영작 후기</div>
             <div className="write-top">
                 <img
                     src={back}
@@ -43,7 +44,6 @@ function WriteReviewPage() {
                     className="back-arrow"
                     onClick={navigateToPurchase}
                 />
-                <div className="write-title">상영작 후기</div>
             </div>
 
             <div className="write-bottom">

@@ -13,11 +13,8 @@ function ReviewPage() {
 
   return (
     <div className="review">
+      <div className="write-title">상영작 후기</div>
       <div className="guestbook">
-        <div className="write-top">
-            <img src={back} alt="뒤로" width="20px" height="20px" className="back-arrow-none" onClick={navigateToPurchase}/>
-            <div className="write-title">상영작 후기</div>
-        </div>
         <div className="guestbook-top-wrap">
           <div className="top-text">즐거운 관람 되셨나요?<br/>덕우의 소감을 공유해 주세요!</div>
           <button className="go-btn" onClick={navigateToPurchase}>

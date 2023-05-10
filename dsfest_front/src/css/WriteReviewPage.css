@@ -27,17 +27,13 @@
 }
 
 .write-top {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* position: absolute; */
-    /* justify-content: center; */
     margin: 10px 0;
 }
 
 .back-arrow {
     position: relative;
-    left: -85px;
-    top: 25px;
+    right: 120px;
+    top: -30px;
 }
 
 .write-title {
