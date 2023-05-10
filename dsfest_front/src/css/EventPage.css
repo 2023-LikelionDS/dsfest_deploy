@@ -17,6 +17,17 @@
         width: 327px !important;
         height: 460px !important;
     }
+    .sectionbody2 {
+        width: 327px !important;
+        padding: 0px !important;
+    }
+    .sectionbody3 {
+        width: 327px !important;
+        padding: 0px !important;
+    }
+    .line2 {
+        width: 379px !important;
+    }
 }
 .eventBody {
     background-color: #fff8fb;
