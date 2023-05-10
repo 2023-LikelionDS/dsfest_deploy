@@ -17,12 +17,13 @@ class PostList(APIView):
     
     def post(self, request):
         serializer = PostSerializer(data=request.data) # 사용자의 입력 데이터
-        if serializer.is_valid(): # 유효성 검사
+        if serializer.is_valid(raise_exception=True): # 유효성 검사
             content = serializer.validated_data.get("content")
 
-            if (word in SWEAR_WORDS for word in content):
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            swear_words = [word for word in content.split() if word in SWEAR_WORDS]
 
-            serializer.save() #저장
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        if swear_words:
+            return Response(status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)

@@ -19,12 +19,14 @@ class ReviewAPIView(APIView):
     
     def post(self, request):
         serializer = ReviewListSerializer(data=request.data)
-        if serializer.is_valid(raise_exception=True):
+        
+        if serializer.is_valid(raise_exception=True): # 유효성 검사
             content = serializer.validated_data.get("content")
-            
-            if (word in SWEAR_WORDS for word in content):
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-         
-            serializer.save()
-            return Response(data=serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+            swear_words = [word for word in content.split() if word in SWEAR_WORDS]
+
+        if swear_words:
+            return Response(status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
