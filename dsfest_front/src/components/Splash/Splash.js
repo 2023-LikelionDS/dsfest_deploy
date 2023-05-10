@@ -14,7 +14,7 @@ import roundback from '../../img/1-roundback.svg';
 function Splash() {
     return (
         <>
-            <div className="insertBody">
+            <div className="SplashBody">
                 <img src={purple} id="purple1"></img>
                 <img src={ivory} id="ivory1"></img>
                 <img src={pink} id="pink1"></img>
@@ -24,7 +24,7 @@ function Splash() {
                 <img src={obj} id="obj"></img>
                 <img src={roundback} id="roundback"></img>
             </div>
-            <div className="insertBody">
+            <div className="SplashBody">
                 <img src={title2} id="title2"></img>
                 <img src={purple} id="purple3"></img>
                 <img src={ivory} id="ivory3"></img>

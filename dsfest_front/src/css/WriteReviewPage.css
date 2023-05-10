@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "PretendardBold";
-    src: url("../fonts/Pretendard-Bold.ttf");
+    font-family: 'PretendardBold';
+    src: url('../fonts/Pretendard-Bold.ttf');
 }
 @font-face {
-    font-family: "PretendardMedium";
-    src: url("../fonts/Pretendard-Medium.ttf");
+    font-family: 'PretendardMedium';
+    src: url('../fonts/Pretendard-Medium.ttf');
 }
 @font-face {
-    font-family: "PretendardSemiBold";
-    src: url("../fonts/Pretendard-SemiBold.ttf");
+    font-family: 'PretendardSemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf');
 }
 
 @media (min-width: 768px) {
@@ -23,6 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .write-top {
@@ -33,7 +34,7 @@
     margin: 10px 0;
 }
 
-.back-arrow{
+.back-arrow {
     position: relative;
     left: -85px;
     top: 25px;
@@ -42,20 +43,20 @@
 .write-title {
     display: flex;
     justify-content: center;
-    font-family: "PretendardBold";
+    font-family: 'PretendardBold';
     color: #64446d;
     font-size: 20px;
     font-weight: 700;
 }
 
-.write-bottom{
+.write-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
 }
 
-.review-form{
+.review-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,36 +64,36 @@
     width: 260px;
 }
 
-.review-content{
-    font-family: "PretendardMedium";
+.review-content {
+    font-family: 'PretendardMedium';
     font-size: 16px;
     width: 100%;
     height: 160px;
     padding: 15px 6px 15px 10px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #d9d9d9;
     box-sizing: border-box;
     resize: none;
     border-radius: 8px;
 }
 
-.review-content::placeholder{
-    font-family: "PretendardMedium";
+.review-content::placeholder {
+    font-family: 'PretendardMedium';
     color: #838383;
     font-size: 16px;
 }
 
-.review-content:focus{
+.review-content:focus {
     outline: 0;
 }
 
-.review-post-button{
-    font-family: "PretendardSemiBold";
+.review-post-button {
+    font-family: 'PretendardSemiBold';
     width: 100%;
     height: 50px;
     border-radius: 8px;
     font-size: 18px;
     border: none;
-    border: 1px solid #8A4395;
+    border: 1px solid #8a4395;
     margin-top: 30px;
     margin-bottom: 80px;
 }

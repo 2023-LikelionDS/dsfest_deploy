@@ -3,10 +3,11 @@ import axios from 'axios';
 import '../../css/EventPage.css';
 
 function EventForm() {
+    const [author, setAuthor] = useState('');
     const [content, setContent] = useState('');
 
     const handleSubmit = (e) => {
-        const newNangman = { content: content };
+        const newNangman = { author, content };
 
         axios
             .post('http://localhost:8000/event/', newNangman)
@@ -29,17 +30,17 @@ function EventForm() {
                     <p>각자의 낭만을 나누어 주세요!</p>
                     <p>오늘의 낭만도, 사소한 낭만도, 꿈같은 낭만도</p>
                     <p>모두 좋습니다. 여러분의 낭만을 들려주세요.</p>
-                    <p> .</p>
+                    <br />
                     <div className="detailtext2">
                         <p>
                             * 총학생회장단이 생각하는 낭만은 중앙본부에서
                             확인하실
                         </p>
                         <p>
-                            수 있습니다! ’낭만’에 대하여 이벤트도 진행하고
+                            &nbsp;수 있습니다! ’낭만’에 대하여 이벤트도 진행하고
                             있으니
                         </p>
-                        <p>많은 관심과 참여 부탁드립니다.</p>
+                        <p>&nbsp;많은 관심과 참여 부탁드립니다.</p>
                     </div>
                 </div>
             </div>
@@ -47,15 +48,17 @@ function EventForm() {
                 <form className="form_inner" onSubmit={handleSubmit}>
                     <input
                         type="text"
-                        onChange={(e) => setContent(e.target.value)}
+                        value={author}
+                        onChange={(e) => setAuthor(e.target.value)}
                         className="form_writer"
                         placeholder="이름"
-                    ></input>
+                    />
                     <textarea
                         value={content}
+                        onChange={(e) => setContent(e.target.value)}
                         className="insert"
                         placeholder="나에게 낭만이란?"
-                    ></textarea>
+                    />
                     <button className="submitbtn" type="submit">
                         낭만 작성 완료
                     </button>

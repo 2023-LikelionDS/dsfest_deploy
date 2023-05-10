@@ -11,9 +11,10 @@
     background-color: #fff8fb;
     overflow: hidden;
     position: relative;
+    overflow-x: hidden;
 }
 
-.nav {
+.schedule_nav {
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
@@ -74,7 +75,7 @@
 }
 
 @media (max-width: 580px) {
-    .nav {
+    .schedule_nav {
         overflow: auto;
     }
 }

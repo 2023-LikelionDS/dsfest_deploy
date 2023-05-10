@@ -1,11 +1,11 @@
 @media (min-width: 768px) {
-    .insertBody {
+    .SplashBody {
         margin: 0 auto;
         width: 375px;
         background-color: #eee8e0;
     }
 }
-.insertBody {
+.SplashBody {
     background-color: #eee8e0;
     overflow: hidden;
     position: relative;
@@ -55,7 +55,7 @@
     z-index: 0;
 }
 /*두번째 페이지 요소 위치 설정*/
-.insertBody:nth-child(2) {
+.SplashBody:nth-child(2) {
     background-color: #dccae0;
 }
 #title2 {
