@@ -192,8 +192,10 @@ function NoticeList() {
                     itemsCountPerPage={6}
                     totalItemsCount={notice.length + 1}
                     pageRangeDisplayed={5}
-                    prevPageText={'‹'}
-                    nextPageText={'›'}
+                    firstPageText={''}
+                    lastPageText={''}
+                    prevPageText={'<'}
+                    nextPageText={'>'}
                     onChange={handlePageChange}
                 />
             ) : (
@@ -202,8 +204,12 @@ function NoticeList() {
                     itemsCountPerPage={6}
                     totalItemsCount={notice.length}
                     pageRangeDisplayed={5}
-                    prevPageText={'‹'}
-                    nextPageText={'›'}
+                    hideFirstLastPages={true}
+                    hideNavigation={false}
+                    firstPageText={''}
+                    lastPageText={''}
+                    prevPageText={'<'}
+                    nextPageText={'>'}
                     onChange={handlePageChange}
                 />
             )}

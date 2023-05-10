@@ -128,7 +128,7 @@ function Splash() {
             }
             cw = canvas.width = 500;
             cx = cw / 2;
-            ch = canvas.height = 300;
+            ch = canvas.height = 350;
             cy = ch / 2;
             Draw();
         };
@@ -145,7 +145,7 @@ function Splash() {
 
     return (
         <>
-            <div className="insertBody">
+            <div className="SplashBody">
                 <img src={title} id="title"></img>
                 <img src={roundback} id="roundback"></img>
                 <div className="content">
@@ -159,7 +159,7 @@ function Splash() {
                 </div>
                 <div id="background"></div>
             </div>
-            <div className="insertBody">
+            <div className="SplashBody">
                 <img src={title2} id="title2"></img>
                 <div className="content">
                     <img src={purple} id="purple3"></img>

@@ -1,16 +1,21 @@
 @media (min-width: 768px) {
-    .insertBody {
+    .SplashBody {
         margin: 0 auto;
         width: 375px;
         background-color: #eee8e0;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
 }
 
-.insertBody:nth-child(1) {
+.SplashBody:nth-child(1) {
     z-index: 0;
     background-color: #eee8e0;
     overflow: hidden;
     position: relative;
+    z-index: 50;
 }
 
 /*첫번쨰 페이지 요소 위치 설정*/
@@ -72,10 +77,11 @@
 }
 
 /*두번째 페이지 요소 위치 설정*/
-.insertBody:nth-child(2) {
+.SplashBody:nth-child(2) {
     height: 800px;
     background-color: #dccae0;
     animation: scroll-down 3s ease-in-out 7s;
+    position: relative;
 }
 #title2 {
     position: absolute;
@@ -130,6 +136,7 @@
     position: absolute;
     z-index: 1;
     top: 85%;
+    z-index: 50;
 }
 /*구름 두둥실 효과*/
 .cloud div {
@@ -139,6 +146,7 @@
     width: 100%;
     position: absolute;
     top: 30%;
+    left: 53%;
     background-color: #ca95c2;
     z-index: 0;
     height: 500px;
