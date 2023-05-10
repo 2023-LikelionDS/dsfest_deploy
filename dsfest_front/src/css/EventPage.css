@@ -238,3 +238,27 @@
 textarea {
     white-space: pre-wrap;
 }
+
+.sectionbody3 > .pagination {
+    margin-top: 36px;
+}
+
+.page-item {
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 3px;
+}
+
+.page-link {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+}
+
+.page-link:hover {
+}
+
+.sectionbody3 > .pagination > ul.pagination li.active {
+    background-color: none !important;
+    color: #4984ae !important;
+}
