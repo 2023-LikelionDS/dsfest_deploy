@@ -41,18 +41,33 @@ function EventCom() {
                 ))}
             </div>
             <div className="pagination">
-                <Pagination
-                    activePage={activePage}
-                    itemsCountPerPage={5}
-                    totalItemsCount={nangmans.length}
-                    firstPageText={''}
-                    lastPageText={''}
-                    prevPageText={'<'}
-                    nextPageText={'>'}
-                    onChange={handlePageChange}
-                    itemClass="page-item"
-                    linkClass="page-link"
-                />
+                {nangmans.length === 0 ? (
+                    <Pagination
+                        activePage={activePage}
+                        itemsCountPerPage={5}
+                        totalItemsCount={nangmans.length + 1}
+                        firstPageText={''}
+                        lastPageText={''}
+                        prevPageText={'<'}
+                        nextPageText={'>'}
+                        onChange={handlePageChange}
+                        itemClass="page-item"
+                        linkClass="page-link"
+                    />
+                ) : (
+                    <Pagination
+                        activePage={activePage}
+                        itemsCountPerPage={5}
+                        totalItemsCount={nangmans.length}
+                        firstPageText={''}
+                        lastPageText={''}
+                        prevPageText={'<'}
+                        nextPageText={'>'}
+                        onChange={handlePageChange}
+                        itemClass="page-item"
+                        linkClass="page-link"
+                    />
+                )}
             </div>
         </div>
     );

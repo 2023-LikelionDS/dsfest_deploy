@@ -1,17 +1,30 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios';
 import '../../css/ReviewPage.css';
-import reviewdata from "../../data/reviewsData.json";
-// import Pagination from 'react-js-pagination';
+import Pagination from 'react-js-pagination';
 
 function ReviewList() {
-  // const [review, setReview] = useState=('');
+  const [reviews, setReviews] = useState([]);
   const colorList = ["#ECDFEC", "#D7BFD8", "#C5A8CB", "#A98BB8"];
 
-  // const [page, setPage] = useState(1);
+  const [activePage, setActivePage] = useState(1);
 
-  // const handlePageChange = (page) => {
-  //   setPage(page);
-  // };
+  const handlePageChange = (page) => {
+    setActivePage(page);
+  };
+
+  const items = reviews.slice((activePage - 1) * 8, (activePage - 1) * 8 + 8);
+
+  useEffect(() => {
+    axios
+        .get('http://127.0.0.1:8000/review/')
+        .then((response) => {
+          setReviews(response.data);
+        })
+        .catch((error) => {
+            console.log(error.response.data);
+        });
+}, []);
 
   const setBackgroundColor = (el) => {
     if(el % 4 === 0) {
@@ -30,11 +43,11 @@ function ReviewList() {
 
   return (
     <div className="reviewList">
-        <div className="account-review">{reviewdata.length}개의 리뷰</div>
+        <div className="account-review">{reviews.length}개의 리뷰</div>
 
         <div className="reviews-wrap">
-          {reviewdata.map((el, index) => 
-            <div className="review-content" key={index} style={{width:"48%", border:"none",
+          {items.map((el, index) => 
+            <div className="review-content" key={index} style={{width:"145px", border:"none", 
             backgroundColor: setBackgroundColor(index),
             }}>
               {el.content}
@@ -42,19 +55,27 @@ function ReviewList() {
           )}
         </div>
 
-        {/* <div className="reviewPagination">
-          {reviewdata.length < 1 || reviewdata === undefined? <div /> :
-            <Pagination
-              activePage={page}
+        {reviews.length === 0 ? (
+          <Pagination
+              activePage={activePage}
               itemsCountPerPage={8}
-              totalItemsCount={reviewdata && reviewdata.length}
+              totalItemsCount={reviews.length + 1}
               pageRangeDisplayed={5}
-              prevPageText={"‹"}
-              nextPageText={"›"}
+              prevPageText={'‹'}
+              nextPageText={'›'}
               onChange={handlePageChange}
-            />
-          }
-        </div> */}
+          />
+      ) : (
+          <Pagination
+              activePage={activePage}
+              itemsCountPerPage={8}
+              totalItemsCount={reviews.length}
+              pageRangeDisplayed={5}
+              prevPageText={'‹'}
+              nextPageText={'›'}
+              onChange={handlePageChange}
+          />
+      )}
     </div>
   )
 }

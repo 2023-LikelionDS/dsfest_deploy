@@ -46,7 +46,7 @@
 
 .guestbook-top-wrap {
     align-items: center;
-    width: 80%;
+    width: 300px;
     height: 170px;
     margin: 50px auto;
     padding: 20px;
@@ -73,28 +73,22 @@
     border: none;
     background-color: #8a4395;
     color: #ffffff;
-    /* margin-top: 30px;
-    margin-bottom: 80px; */
 }
 
 .white-arrow {
     padding-left: 10px;
 }
 
-.reviewList {
-    display: flex;
-}
-
 .account-review {
     font-family: 'PretendardMedium';
     font-size: 16px;
     text-align: left;
-    margin-left: 40px;
+    margin-bottom: 30px;
 }
 
 .reviewList {
-    display: flex;
-    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .reviews-wrap {
@@ -102,7 +96,8 @@
     font-family: 'PretendardMedium';
     font-size: 13px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px 0px;
-    margin: 30px 40px;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+
 }

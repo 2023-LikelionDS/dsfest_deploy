@@ -3,14 +3,12 @@ import styled from 'styled-components';
 import Menu from '../components/Schedule/Menu';
 import '../css/Schedule.css';
 
-const Title = styled.h2`
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.02em;
+const Title = styled.div`
     color: #64446d;
-    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 9.5px 0px 34.5px 0px;
+    font-family: 'PretendardBold';
 `;
 
 function SchedulePage() {

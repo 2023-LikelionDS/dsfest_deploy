@@ -52,9 +52,10 @@
 
 .eventtitle {
     color: #64446d;
-    size: 20px;
+    font-size: 20px;
     font-weight: 700;
     margin: 9.5px 0px 34.5px 0px;
+    font-family: 'PretendardBold';
 }
 
 .subtitle1 {
@@ -195,7 +196,6 @@
     flex-direction: column;
     padding: 0px 24px;
     box-sizing: border-box;
-    margin-bottom: 130px;
 }
 .commentsection {
     display: flex;
@@ -257,5 +257,5 @@ textarea {
 
 .sectionbody3 > .pagination > ul.pagination li.active {
     background-color: none !important;
-    color: #4984ae !important;
+    color: #986d9e !important;
 }
