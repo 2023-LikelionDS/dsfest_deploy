@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
+import axios from 'axios';
 import '../css/WriteReviewPage.css'
 import { useNavigate } from "react-router-dom";
 import back from "../img/back_purple.png";
 
 function WriteReviewPage() {
     const navigate = useNavigate();
-    // const [review, setReview] = useState('');
+    const [content, setContent] = useState('');
+
     const [isClicked, setIsClicked] = useState(false);
 
     const handleClick = () => {
@@ -16,10 +18,19 @@ function WriteReviewPage() {
         navigate("/review");
       };
 
-    //api 연결 부분
-    // const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
+        axios
+            .post('http://localhost:8000/review/', {content})
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.log(error.response.data);
+        });
 
-    // }
+        e.preventDefault();
+        navigate("/review");
+    }
 
     return (
     <div className="writeReview">
@@ -29,9 +40,8 @@ function WriteReviewPage() {
         </div>
 
         <div className="write-bottom">
-            {/* <form className="review-form" onSubmit={handleSubmit}> */}
-            <form className="review-form">
-                <textarea type="text" placeholder="<TAKE:> 후기를 남겨 주세요!" name="content" className="review-content" />
+            <form className="review-form" onSubmit={handleSubmit}>
+                <textarea type="text" placeholder="<TAKE:> 후기를 남겨 주세요!" name="content" className="review-content" onChange={(e) => setContent(e.target.value)}/>
                 <button 
                     className="review-post-button" type="submit"
                     onClick={handleClick}
