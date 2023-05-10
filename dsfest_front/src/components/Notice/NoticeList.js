@@ -206,6 +206,8 @@ function NoticeList() {
                     pageRangeDisplayed={5}
                     hideFirstLastPages={true}
                     hideNavigation={false}
+                    firstPageText={''}
+                    lastPageText={''}
                     prevPageText={'<'}
                     nextPageText={'>'}
                     onChange={handlePageChange}

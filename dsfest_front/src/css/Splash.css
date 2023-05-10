@@ -3,12 +3,14 @@
         margin: 0 auto;
         width: 375px;
         background-color: #eee8e0;
+        z-index: 50;
     }
 }
 .SplashBody {
     background-color: #eee8e0;
     overflow: hidden;
     position: relative;
+    z-index: 50;
 }
 
 /*첫번쨰 페이지 요소 위치 설정*/
@@ -45,14 +47,14 @@
 #obj {
     margin-top: 80%;
     margin-right: 5%;
-    width: 120%;
+    width: 100%;
     z-index: 1;
 }
 #roundback {
     position: absolute;
     top: 45%;
-    width: 120%;
-    z-index: 0;
+    width: 100%;
+    z-index: -30;
 }
 /*두번째 페이지 요소 위치 설정*/
 .SplashBody:nth-child(2) {
@@ -106,6 +108,7 @@
 #text {
     position: absolute;
     top: 85%;
+    z-index: 50;
 }
 /*구름 두둥실 효과*/
 .cloud div {
