@@ -8,6 +8,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import default_img from '../../img/default_image.jpg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+
 const DEFAULT_IMG_URL = 'http://localhost:8000';
 
 const NoticeImg = styled.img`
@@ -64,7 +67,15 @@ function NoticeDetail() {
     return (
         <div className="insertBody2">
             <div className="detailCotainer">
-                <div className="notice">공지사항</div>
+                <div className="notice">
+                    {' '}
+                    <FontAwesomeIcon
+                        icon={faChevronLeft}
+                        className="faChevronLeft"
+                        onClick={onClickToList}
+                    />
+                    공지사항
+                </div>
                 <Slider {...settings}>
                     {detail.images && detail.images.length > 0 ? (
                         detail.images.map((review) => (
@@ -84,7 +95,9 @@ function NoticeDetail() {
 
                         {detail && detail.created && (
                             <div className="noticeDate2">
-                                {detail.created.slice(5, 10)}
+                                {new Date(detail.created)
+                                    .toLocaleDateString()
+                                    .replace(/\//g, '.')}
                             </div>
                         )}
                     </div>
