@@ -13,7 +13,7 @@ with open('badwords.txt', 'r', encoding='utf-8') as file:
 # Create your views here.
 class ReviewAPIView(APIView):
     def get(self, request):
-        reviews = Review.objects.all()
+        reviews = Review.objects.all().order_by('-date')
         serializer = ReviewListSerializer(reviews, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
     
