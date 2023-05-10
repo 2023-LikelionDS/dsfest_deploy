@@ -138,7 +138,7 @@ ul.pagination li a {
 }
 
 ul.pagination li.active a {
-    color: white;
+    color: #4984ae !important;
 }
 
 ul.pagination li.active a:hover {
@@ -146,8 +146,7 @@ ul.pagination li.active a:hover {
 }
 
 ul.pagination li.active {
-    background-color: #986d9e;
-    border-radius: 50%;
+    background-color: none !important;
 }
 
 ul.pagination li a:hover {

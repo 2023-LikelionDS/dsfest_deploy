@@ -255,9 +255,6 @@ textarea {
     color: #333;
 }
 
-.page-link:hover {
-}
-
 .sectionbody3 > .pagination > ul.pagination li.active {
     background-color: none !important;
     color: #4984ae !important;
