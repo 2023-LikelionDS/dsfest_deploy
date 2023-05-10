@@ -91,14 +91,28 @@ function NoticeList() {
                                         )}
 
                                         <div className="noticeTitle">
-                                            <div>{review.title}</div>
+                                            <div>
+                                                {review.title.length > 10
+                                                    ? review.title.substring(
+                                                          0,
+                                                          10
+                                                      ) + '...'
+                                                    : review.title}
+                                            </div>
                                             <div className="invTitle">
-                                                {review.title}
+                                                {review.title.length > 10
+                                                    ? review.title.substring(
+                                                          0,
+                                                          10
+                                                      ) + '...'
+                                                    : review.title}
                                             </div>
                                         </div>
                                         <div className="bottomC">
                                             <div className="noticeDate">
-                                                {review.created.slice(5, 10)}
+                                                {new Date(review.created)
+                                                    .toLocaleDateString()
+                                                    .replace(/\//g, '.')}
                                             </div>
                                             {review.pinned_order !== 0 || '' ? (
                                                 <div className="star">중요</div>
@@ -135,11 +149,28 @@ function NoticeList() {
                                             ></img>
                                         )}
                                         <div className="noticeTitle">
-                                            <div>{review.title}</div>
+                                            <div>
+                                                {review.title.length > 10
+                                                    ? review.title.substring(
+                                                          0,
+                                                          10
+                                                      ) + '...'
+                                                    : review.title}
+                                            </div>
+                                            <div className="invTitle">
+                                                {review.title.length > 10
+                                                    ? review.title.substring(
+                                                          0,
+                                                          10
+                                                      ) + '...'
+                                                    : review.title}
+                                            </div>
                                         </div>
                                         <div className="bottomC">
                                             <div className="noticeDate">
-                                                {review.created.slice(5, 10)}
+                                                {new Date(review.created)
+                                                    .toLocaleDateString()
+                                                    .replace(/\//g, '.')}
                                             </div>
 
                                             {review.pinned_order !== 0 || '' ? (
@@ -161,8 +192,10 @@ function NoticeList() {
                     itemsCountPerPage={6}
                     totalItemsCount={notice.length + 1}
                     pageRangeDisplayed={5}
-                    prevPageText={'‹'}
-                    nextPageText={'›'}
+                    firstPageText={''}
+                    lastPageText={''}
+                    prevPageText={'<'}
+                    nextPageText={'>'}
                     onChange={handlePageChange}
                 />
             ) : (
@@ -171,8 +204,12 @@ function NoticeList() {
                     itemsCountPerPage={6}
                     totalItemsCount={notice.length}
                     pageRangeDisplayed={5}
-                    prevPageText={'‹'}
-                    nextPageText={'›'}
+                    hideFirstLastPages={true}
+                    hideNavigation={false}
+                    firstPageText={''}
+                    lastPageText={''}
+                    prevPageText={'<'}
+                    nextPageText={'>'}
                     onChange={handlePageChange}
                 />
             )}

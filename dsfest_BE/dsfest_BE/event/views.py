@@ -10,7 +10,7 @@ with open('badwords.txt', 'r', encoding='utf-8') as file:
 
 class PostList(APIView):
     def get(self, request):
-        posts = Post.objects.all()
+        posts = Post.objects.all().order_by('-date')
         serializer = PostSerializer(posts, many=True) # 여러 개 객체 serialization 위해 many=true
         return Response(serializer.data)
     

@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'PretendardBold';
+    src: url('../fonts/Pretendard-Bold.ttf');
+}
+@font-face {
+    font-family: 'PretendardMedium';
+    src: url('../fonts/Pretendard-Medium.ttf');
+}
+@font-face {
+    font-family: 'PretendardSemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf');
+}
 @media (min-width: 768px) {
     .insertBody {
         margin: 0 auto;
@@ -5,6 +17,15 @@
         background-color: #fff8fb;
     }
 }
+
+.eventtitle {
+    color: #64446d;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 9.5px 0px 34.5px 0px;
+    font-family: 'PretendardBold';
+}
+
 .insertBody {
     background-color: #fff8fb;
     display: flex;
@@ -25,7 +46,8 @@
 .noticeCount {
     font-weight: bold;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
+    align-self: flex-start;
 }
 
 .noNotice {
@@ -67,6 +89,7 @@
     width: 150px;
     font-weight: bold;
     text-align: start;
+    word-break: break-all;
 }
 .invTitle {
     visibility: hidden;
@@ -92,6 +115,7 @@
     padding: 4px;
     border-radius: 4px;
     align-self: self-end;
+    margin-top: -8px;
 }
 
 .noStar {
@@ -138,7 +162,7 @@ ul.pagination li a {
 }
 
 ul.pagination li.active a {
-    color: white;
+    color: #986d9e !important;
 }
 
 ul.pagination li.active a:hover {
@@ -146,8 +170,7 @@ ul.pagination li.active a:hover {
 }
 
 ul.pagination li.active {
-    background-color: #986d9e;
-    border-radius: 50%;
+    background-color: none !important;
 }
 
 ul.pagination li a:hover {
@@ -197,7 +220,10 @@ ul.pagination li a.active {
     margin: 9.5px 0px 34.5px 0px;
     align-self: center;
 }
-
+.faChevronLeft {
+    position: relative;
+    left: -115px;
+}
 .detailC1 {
     margin-top: 20px;
     display: flex;
@@ -207,6 +233,7 @@ ul.pagination li a.active {
 
 .detailTitle {
     font-weight: bold;
+    word-break: break-all;
 }
 
 .detailContent {
@@ -231,7 +258,7 @@ ul.pagination li a.active {
 .noticeDate2 {
     color: grey;
     font-size: small;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .slickP {
