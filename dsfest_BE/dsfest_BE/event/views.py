@@ -20,12 +20,10 @@ class PostList(APIView):
         if serializer.is_valid(raise_exception=True): # 유효성 검사
             content = serializer.validated_data.get("content")
 
-<<<<<<< HEAD
+        if serializer.is_valid(raise_exception=True): # 유효성 검사
+            content = serializer.validated_data.get("content")
+
             swear_words = [word for word in content.split() if word in SWEAR_WORDS]
-=======
-            # if (word in SWEAR_WORDS for word in content):
-            #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
->>>>>>> 19263b929762b1bef5b341f037f0b9a5b3159ec8
 
         if swear_words:
             return Response(status=status.HTTP_422_UNPROCESSABLE_ENTITY)
