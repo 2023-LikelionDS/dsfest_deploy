@@ -8,17 +8,17 @@ function WriteReviewPage() {
     const navigate = useNavigate();
     const [content, setContent] = useState('');
 
-    const [isClicked, setIsClicked] = useState(false);
-
-    const handleClick = () => {
-        setIsClicked(!isClicked);
-    };
-
     const navigateToPurchase = () => {
         navigate('/review');
     };
 
     const handleSubmit = (e) => {
+        if (!content) {
+            alert('내용을 입력해주세요.');
+            e.preventDefault();
+            return;
+        }
+
         axios
             .post('http://localhost:8000/review/', {content})
             .then((response) => {
@@ -63,11 +63,6 @@ function WriteReviewPage() {
                     <button
                         className="review-post-button"
                         type="submit"
-                        onClick={handleClick}
-                        style={{
-                            backgroundColor: isClicked ? '#FFFFFF' : '#8A4395',
-                            color: isClicked ? '#8A4395' : '#FFFFFF',
-                        }}
                     >
                         작성 완료
                     </button>
