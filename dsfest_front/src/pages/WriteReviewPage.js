@@ -25,7 +25,12 @@ function WriteReviewPage() {
                 console.log(response.data);
             })
             .catch((error) => {
-                console.log(error.response.data);
+            if (error.response && error.response.status === 422) {
+                alert(
+                    '욕설 및 성희롱 관련 단어 필터링 되고있습니다. 바르고 고운말 부탁드립니다'
+                );
+            }
+            console.log(error.response.data);
         });
 
         e.preventDefault();
