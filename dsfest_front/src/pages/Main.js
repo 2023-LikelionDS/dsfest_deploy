@@ -1,10 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
-import default_img from '../img/bannerimg1.png';
-import poster1 from '../img/bannerimg2.png';
-import poster2 from '../img/bannerimg1.png';
-import poster3 from '../img/bannerimg2.png';
+import poster1 from '../img/bannerimg1.png';
+import poster2 from '../img/bannerimg2.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styled from 'styled-components';
@@ -16,8 +13,8 @@ import letter from '../img/main_event.svg';
 import '../css/Main.css';
 
 const SliderImg = styled.img`
-    width: 310px;
-    height: 310px;
+    width: 375px;
+    height: 217px;
     background-color: grey;
     align-self: center;
 `;
@@ -39,8 +36,6 @@ const NextTo = styled.div`
 `;
 
 function Main() {
-    // const navigate = useNavigate();
-
     const handleClick = (el) => {
         if (el === 1) {
             window.location.href = '/notice';
@@ -69,10 +64,10 @@ function Main() {
         <div className="mainBody">
             <div className="slider-wrap">
                 <Slider {...settings}>
-                    <SliderImg src={default_img} />
                     <SliderImg src={poster1} />
                     <SliderImg src={poster2} />
-                    <SliderImg src={poster3} />
+                    <SliderImg src={poster1} />
+                    <SliderImg src={poster2} />
                 </Slider>
             </div>
             <div className="main-btn-wrap">

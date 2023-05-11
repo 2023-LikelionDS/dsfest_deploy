@@ -27,7 +27,8 @@
 }
 
 .slider-wrap {
-    width: 375px;
+    width: 360px;
+    height: 217px;
     align-items: center;
     margin: 0 auto;
 }
