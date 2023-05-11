@@ -7,6 +7,12 @@ function EventForm() {
     const [content, setContent] = useState('');
 
     const handleSubmit = (e) => {
+        if (!author || !content) {
+            alert('내용을 입력해주세요.');
+            e.preventDefault();
+            return;
+        }
+
         const newNangman = { author, content };
 
         axios
@@ -17,11 +23,15 @@ function EventForm() {
             .catch((error) => {
                 if (error.response && error.response.status === 422) {
                     alert(
-                        '욕설 및 성희롱 관련 단어 필터링 되고있습니다. 바르고 고운말 부탁드립니다'
+                        '욕설 및 성희롱 관련 단어 필터링 되고있습니다. 바르고 고운말 부탁드립니다.'
                     );
                 }
                 console.log(error.response.data);
             });
+
+        // 입력 완료 후 초기화
+        setAuthor('');
+        setContent('');
     };
 
     return (
