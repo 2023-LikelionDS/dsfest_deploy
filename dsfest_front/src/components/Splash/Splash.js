@@ -148,7 +148,7 @@ function Splash() {
 
         setTimeout(() => {
             window.location.href = '/';
-        }, 15000);
+        }, 12000);
     });
 
     return (

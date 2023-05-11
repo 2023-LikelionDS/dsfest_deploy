@@ -57,6 +57,7 @@
     width: 300px;
     top: 13%;
     z-index: 1;
+    animation: fadeIn 1s linear;
 }
 #pink2 {
     position: absolute;
@@ -76,14 +77,14 @@
     left: -15%;
     width: 123%;
     z-index: 1;
-    animation: fadeIn 1s linear;
+    animation: fadeIn 1s ease-in-out;
 }
 #roundback {
     position: absolute;
     top: 45%;
     width: 120%;
     z-index: 0;
-    animation: fadeOut 3s ease-in-out 5s;
+    animation: fadeOut 3s ease-in-out 4.5s;
     /* display: none; */
 }
 
@@ -130,21 +131,21 @@
     top: 38%;
     left: 7%;
     z-index: 1;
-    animation: up 3s infinite 9.5s ease-in-out;
+    animation: up 3s infinite 8.5s ease-in-out;
 }
 #take2 {
     position: absolute;
     top: 50%;
     right: 7%;
     z-index: 1;
-    animation: up 3s infinite 9.5s ease-in-out;
+    animation: up 3s infinite 8.5s ease-in-out;
 }
 #take3 {
     position: absolute;
     top: 67%;
     left: 7%;
     z-index: 1;
-    animation: up 3s infinite 9.5s ease-in-out;
+    animation: up 3s infinite 8.5s ease-in-out;
 }
 #text {
     position: absolute;
