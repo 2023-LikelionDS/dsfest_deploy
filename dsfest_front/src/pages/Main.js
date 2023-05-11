@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
-import default_img from '../img/default_image.jpg';
-import poster1 from '../img/take1.png';
-import poster2 from '../img/take2.png';
-import poster3 from '../img/take3.png';
+import default_img from '../img/bannerimg1.png';
+import poster1 from '../img/bannerimg2.png';
+import poster2 from '../img/bannerimg1.png';
+import poster3 from '../img/bannerimg2.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styled from 'styled-components';
@@ -39,7 +39,7 @@ const NextTo = styled.div`
 `;
 
 function Main() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const handleClick = (el) => {
         if (el === 1) {

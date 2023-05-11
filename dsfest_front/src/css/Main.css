@@ -26,13 +26,13 @@
     overflow-x: hidden;
 }
 
-.slider-wrap{
+.slider-wrap {
     width: 375px;
     align-items: center;
     margin: 0 auto;
 }
 
-.main-btn-wrap{
+.main-btn-wrap {
     display: grid;
     width: 330px;
     height: 300px;
@@ -43,11 +43,11 @@
     grid-template-rows: repeat(3, 1fr);
 }
 
-.main-notice{
+.main-notice {
     width: 113px;
     box-shadow: 2px 2px 5px rgba(218, 218, 218, 0.615);
-	grid-column: 1 / 2;
-	grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
     border: 1px solid #d9d9d9;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -55,10 +55,10 @@
     border-radius: 8px;
 }
 
-.main-timetable{
+.main-timetable {
     box-shadow: 2px 2px 5px rgba(218, 218, 218, 0.615);
-	grid-column: 2 / 4;
-	grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
     height: 100px;
     border: 1px solid #d9d9d9;
     background-color: #ffffff;
@@ -67,10 +67,10 @@
     border-radius: 8px;
 }
 
-.main-review{
+.main-review {
     box-shadow: 2px 2px 5px rgba(218, 218, 218, 0.615);
-	grid-column: 2 / 4;
-	grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
     height: 100px;
     border: 1px solid #d9d9d9;
     background-color: #ffffff;
@@ -79,10 +79,10 @@
     border-radius: 8px;
 }
 
-.main-event{
+.main-event {
     box-shadow: 2px 2px 5px rgba(218, 218, 218, 0.615);
-	grid-column: 1 / 4;
-	grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
     height: 102px;
     border: 1px solid #d9d9d9;
     background-color: #ffffff;
@@ -91,38 +91,38 @@
     border-radius: 8px;
 }
 
-.main-title{
+.main-title {
     font-family: 'PretendardSemiBold';
     font-size: 18px;
     padding: 15px 10px 0px 15px;
 }
 
-.main-content{
+.main-content {
     font-family: 'PretendardMedium';
     font-size: 11px;
     padding: 10px 15px;
-    color: #6F6F6F;
+    color: #6f6f6f;
 }
 
-.main-notice-img{
+.main-notice-img {
     position: relative;
     top: 83px;
     left: 50px;
 }
 
-.main-timetable-img{
+.main-timetable-img {
     position: relative;
     left: 130px;
     bottom: 10px;
 }
 
-.main-review-img{
+.main-review-img {
     position: relative;
     top: -52px;
     left: 145px;
 }
 
-.main-event-img{
+.main-event-img {
     position: relative;
     float: right;
     bottom: 45px;
