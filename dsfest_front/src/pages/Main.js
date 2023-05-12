@@ -2,6 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import poster1 from '../img/bannerimg1.png';
 import poster2 from '../img/bannerimg2.png';
+import poster3 from '../img/bannerimg3.jpg';
+import poster4 from '../img/bannerimg4.jpg';
+import poster5 from '../img/bannerimg5.jpg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styled from 'styled-components';
@@ -66,8 +69,9 @@ function Main() {
                 <Slider {...settings}>
                     <SliderImg src={poster1} />
                     <SliderImg src={poster2} />
-                    <SliderImg src={poster1} />
-                    <SliderImg src={poster2} />
+                    <SliderImg src={poster3} />
+                    <SliderImg src={poster4} />
+                    <SliderImg src={poster5} />
                 </Slider>
             </div>
             <div className="main-btn-wrap">
