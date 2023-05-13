@@ -13,7 +13,7 @@ function EventPoster() {
             <div className="detailsection">
                 <div className="subtitle1">낭만에 대하여</div>
                 <div className="detailtext1">
-                    <p>2023 근화제 &lt;Take:&gt;의</p>
+                    <p>2023 근화제 &lt;TAKE:&gt;의</p>
                     <p>마지막 날을 장식할, 낭만!</p>
                     <p>낭만에 대하여는 덕성여자대학교 학우분들의</p>
                     <p>‘낭만’을 공유하는 이벤트입니다.</p>

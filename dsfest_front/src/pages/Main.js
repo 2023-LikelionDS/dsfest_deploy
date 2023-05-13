@@ -92,7 +92,7 @@ function Main() {
                 <div className="main-review" onClick={() => handleClick(3)}>
                     <div className="main-title">상영작 후기</div>
                     <div className="main-content">
-                        {`<`}TACKE:{`>`} 리뷰 작성
+                        {`<`}TAKE:{`>`} 리뷰 작성
                     </div>
                     <img className="main-review-img" src={popcorn} alt="사진" />
                 </div>
