@@ -37,8 +37,8 @@
     display: grid;
     width: 330px;
     height: 300px;
-    margin: 50px auto;
-    margin-bottom: 80px;
+    margin: 100px auto;
+    margin-bottom: 205px;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);

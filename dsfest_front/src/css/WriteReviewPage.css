@@ -21,7 +21,7 @@
 .writeReview {
     background-color: #fff8fb;
     display: flex;
-    height: 500px;
+    margin-bottom: 410px;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
