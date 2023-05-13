@@ -146,9 +146,9 @@ function Splash() {
             window.scrollTo({ top: 800, behavior: 'smooth' }); // 스크롤이 자동으로 이동되도록 함
         }, 7000);
 
-        // setTimeout(() => {
-        //     window.location.href = '/main';
-        // }, 12000);
+        setTimeout(() => {
+            window.location.href = '/main';
+        }, 12000);
 
         window.addEventListener(
             'click',
