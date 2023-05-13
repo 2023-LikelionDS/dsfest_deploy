@@ -47,7 +47,7 @@ function NoticeDetail() {
             if (
                 (detail.body?.replace(/<br\s*\/?>/gm, '\n') || '').length <= 200
             ) {
-                bodyRef.current.style.marginTop = '350px';
+                bodyRef.current.style.marginTop = '150px';
             } else {
                 bodyRef.current.style.marginTop = '100px';
             }
