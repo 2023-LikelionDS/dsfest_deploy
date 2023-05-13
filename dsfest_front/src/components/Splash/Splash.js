@@ -161,7 +161,7 @@ function Splash() {
             <div className="SplashBody">
                 <img src={title} id="title"></img>
                 <img src={roundback} id="roundback"></img>
-                <div className="content">
+                <div className="contents">
                     <img src={purple} id="purple1"></img>
                     <img src={ivory} id="ivory1"></img>
                     <img src={pink} id="pink1"></img>
