@@ -3,6 +3,11 @@ import { useEffect, useState } from 'react';
 import Take1 from './Take1';
 import Take2 from './Take2';
 import Take3 from './Take3';
+import styled from 'styled-components';
+const Space = styled.div`
+    width: 100%;
+    height: 60px;
+`;
 function Menu() {
     const [status, setStatus] = useState(1);
 
@@ -61,6 +66,7 @@ function Menu() {
             {status === 1 && <Take1 />}
             {status === 2 && <Take2 />}
             {status === 3 && <Take3 />}
+            <Space />
         </>
     );
 }
