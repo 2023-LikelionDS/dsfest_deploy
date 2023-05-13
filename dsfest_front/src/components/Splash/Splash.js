@@ -146,9 +146,9 @@ function Splash() {
             window.scrollTo({ top: 800, behavior: 'smooth' }); // 스크롤이 자동으로 이동되도록 함
         }, 7000);
 
-        setTimeout(() => {
-            window.location.href = '/main';
-        }, 12000);
+        // setTimeout(() => {
+        //     window.location.href = '/main';
+        // }, 12000);
 
         window.addEventListener(
             'click',
@@ -161,7 +161,7 @@ function Splash() {
             <div className="SplashBody">
                 <img src={title} id="title"></img>
                 <img src={roundback} id="roundback"></img>
-                <div className="content">
+                <div className="contents">
                     <img src={purple} id="purple1"></img>
                     <img src={ivory} id="ivory1"></img>
                     <img src={pink} id="pink1"></img>
