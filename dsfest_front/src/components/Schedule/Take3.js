@@ -128,7 +128,7 @@ function Take3() {
                     </p>
                     <Caption
                         style={{
-                            fontSize: '0.1px',
+                            fontSize: '1px',
                         }}
                     >
                         Chap.3 우리가 써 내려갈 덕성의 한 페이지

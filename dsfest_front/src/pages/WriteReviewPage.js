@@ -1,16 +1,14 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import '../css/WriteReviewPage.css'
-import { useNavigate } from "react-router-dom";
 import back from "../img/back_purple.png";
 
 function WriteReviewPage() {
-    const navigate = useNavigate();
     const [content, setContent] = useState('');
 
-    const navigateToPurchase = () => {
-        navigate('/review');
-    };
+    const onClick = () => {
+        window.location.href = '/review';
+      };
 
     const handleSubmit = (e) => {
         if (!content) {
@@ -34,7 +32,7 @@ function WriteReviewPage() {
         });
 
         e.preventDefault();
-        navigate("/review");
+        window.location.href = '/review';
     }
 
     return (
@@ -47,7 +45,7 @@ function WriteReviewPage() {
                     width="20px"
                     height="20px"
                     className="back-arrow"
-                    onClick={navigateToPurchase}
+                    onClick={onClick}
                 />
             </div>
 

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import axios from 'axios';
 import '../../css/ReviewPage.css';
 import Pagination from 'react-js-pagination';
@@ -13,8 +13,6 @@ function ReviewList() {
     setActivePage(page);
   };
 
-  const items = reviews.slice((activePage - 1) * 8, (activePage - 1) * 8 + 8);
-
   useEffect(() => {
     axios
         .get('http://127.0.0.1:8000/review/')
@@ -25,6 +23,24 @@ function ReviewList() {
             console.log(error.response.data);
         });
 }, []);
+
+  const items = reviews.slice((activePage - 1) * 8, (activePage - 1) * 8 + 8); 
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+      if (containerRef.current) {
+          if (items.length <= 2) {
+              containerRef.current.style.marginBottom = '350px';
+          } else if (items.length <= 4) {
+              containerRef.current.style.marginBottom = '180px';
+          } else {
+              containerRef.current.style.marginBottom = '50px';
+          }
+      } else {
+          console.log('containerRef.current is null');
+      }
+  }, [items, containerRef]);
 
   const setBackgroundColor = (el) => {
     if(el % 4 === 0) {
@@ -45,9 +61,9 @@ function ReviewList() {
     <div className="reviewList">
         <div className="account-review">{reviews.length}개의 리뷰</div>
 
-        <div className="reviews-wrap">
+        <div className="reviews-wrap" ref={containerRef}>
           {items.map((el, index) => 
-            <div className="review-content" key={index} style={{width:"145px", border:"none", 
+            <div className="review-content" key={index} style={{width:"160px", border:"none", 
             backgroundColor: setBackgroundColor(index),
             }}>
               {el.content}
@@ -61,8 +77,10 @@ function ReviewList() {
               itemsCountPerPage={8}
               totalItemsCount={reviews.length + 1}
               pageRangeDisplayed={5}
-              prevPageText={'‹'}
-              nextPageText={'›'}
+              firstPageText={''}
+              lastPageText={''}
+              prevPageText={'<'}
+              nextPageText={'>'}
               onChange={handlePageChange}
           />
       ) : (
@@ -71,8 +89,12 @@ function ReviewList() {
               itemsCountPerPage={8}
               totalItemsCount={reviews.length}
               pageRangeDisplayed={5}
-              prevPageText={'‹'}
-              nextPageText={'›'}
+              hideFirstLastPages={true}
+              hideNavigation={false}
+              firstPageText={''}
+              lastPageText={''}
+              prevPageText={'<'}
+              nextPageText={'>'}
               onChange={handlePageChange}
           />
       )}
