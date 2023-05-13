@@ -80,6 +80,6 @@
 
 @media (max-width: 580px) {
     .schedule_nav {
-        overflow: auto;
+        overflow: hidden;
     }
 }
