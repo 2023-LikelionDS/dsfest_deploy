@@ -149,6 +149,8 @@ function Splash() {
         setTimeout(() => {
             window.location.href = '/';
         }, 12000);
+
+        window.addEventListener('click', () => (window.location.href = '/'));
     });
 
     return (
