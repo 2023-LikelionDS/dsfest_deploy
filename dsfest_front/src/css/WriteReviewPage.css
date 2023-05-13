@@ -21,6 +21,7 @@
 .writeReview {
     background-color: #fff8fb;
     display: flex;
+    height: 500px;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
@@ -32,7 +33,7 @@
 
 .back-arrow {
     position: relative;
-    right: 120px;
+    right: 156px;
     top: -29px;
 }
 
@@ -62,7 +63,7 @@
 .review-content {
     font-family: 'PretendardMedium';
     font-size: 16px;
-    width: 100%;
+    width: 330px;
     height: 160px;
     padding: 15px 6px 15px 10px;
     border: 1px solid #d9d9d9;
@@ -83,7 +84,7 @@
 
 .review-post-button {
     font-family: 'PretendardSemiBold';
-    width: 100%;
+    width: 330px;
     height: 50px;
     border-radius: 8px;
     font-size: 18px;
