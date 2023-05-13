@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    .errorBody {
+        margin: 0 auto;
+        width: 375px;
+        background-color: #fff8fb;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.errorBody {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff8fb;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorBody > h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}

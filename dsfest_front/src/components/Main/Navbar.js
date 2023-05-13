@@ -28,7 +28,7 @@ const Menubar = () => {
         <div>
             <div className={`menubar ${menuActive ? 'active' : ''}`}>
                 <div className="HeaderTop">
-                    <Link className="FesLogoLink" to="/">
+                    <Link className="FesLogoLink" to="/main">
                         <img src={FesLogo} alt="로고" />
                     </Link>
                     <div

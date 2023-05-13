@@ -147,10 +147,13 @@ function Splash() {
         }, 7000);
 
         setTimeout(() => {
-            window.location.href = '/';
+            window.location.href = '/main';
         }, 12000);
 
-        window.addEventListener('click', () => (window.location.href = '/'));
+        window.addEventListener(
+            'click',
+            () => (window.location.href = '/main')
+        );
     });
 
     return (
