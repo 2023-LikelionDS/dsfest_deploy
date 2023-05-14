@@ -149,7 +149,7 @@ function Take2() {
                             color: 'rgba(159, 162, 177, 0.8)',
                         }}
                     >
-                        ~21:00
+                        ~21:30
                     </p>
                     {isOn ? (
                         <Caption>하현상</Caption>

@@ -120,7 +120,7 @@ function Take3() {
                             color: '#545656',
                         }}
                     >
-                        15:00
+                        18:00
                     </p>
                     <p
                         style={{
@@ -128,7 +128,7 @@ function Take3() {
                             color: 'rgba(159, 162, 177, 0.8)',
                         }}
                     >
-                        ~17:00
+                        ~20:10
                     </p>
                     <Caption>Chap.3 우리가 써 내려갈 덕성의 한 페이지</Caption>
                 </Card>
@@ -141,7 +141,7 @@ function Take3() {
                             color: '#545656',
                         }}
                     >
-                        20:00
+                        20:10
                     </p>
                     <p
                         style={{
@@ -149,7 +149,7 @@ function Take3() {
                             color: 'rgba(159, 162, 177, 0.8)',
                         }}
                     >
-                        ~21:00
+                        ~21:10
                     </p>
                     {isOn ? (
                         <Caption>다비치</Caption>
@@ -167,7 +167,7 @@ function Take3() {
                             color: '#545656',
                         }}
                     >
-                        21:00
+                        21:10
                     </p>
                     <Caption>불꽃놀이</Caption>
                 </Card>
