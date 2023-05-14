@@ -63,7 +63,7 @@ function WriteReviewPage() {
                         placeholder="<TAKE:> 후기를 남겨 주세요!"
                         name="content"
                         className="review-content"
-                        maxLength={maxCharacters + 1}
+                        maxLength={maxCharacters}
                         onChange={
                             ((e) => setContent(e.target.value), handleChange)
                         }

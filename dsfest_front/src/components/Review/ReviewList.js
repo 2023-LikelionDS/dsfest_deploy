@@ -63,7 +63,7 @@ function ReviewList() {
 
         <div className="reviews-wrap" ref={containerRef}>
           {items.map((el, index) => 
-            <div className="review-content" key={index} style={{width:"160px", border:"none", 
+            <div className="written-review" key={index} style={{border:"none", 
             backgroundColor: setBackgroundColor(index),
             }}>
               {el.content}

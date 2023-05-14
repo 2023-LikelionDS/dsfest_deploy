@@ -51,9 +51,9 @@
 .guestbook-top-wrap {
     align-items: center;
     width: 330px;
-    height: 170px;
+    height: 155px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #d9d9d9;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -104,4 +104,17 @@
     gap: 10px;
     margin-bottom: 30px;
     word-break: break-all;
+}
+
+.written-review{
+    align-self: center;
+    font-family: 'PretendardMedium';
+    font-size: 13px;
+    width: 160px;
+    height: 136px;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 5px;
 }
