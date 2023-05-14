@@ -18,7 +18,6 @@ import '../css/Main.css';
 const SliderImg = styled.img`
     width: 375px;
     height: 217px;
-    background-color: grey;
     align-self: center;
 `;
 
