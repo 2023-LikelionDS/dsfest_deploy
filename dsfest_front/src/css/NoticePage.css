@@ -99,13 +99,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    align-content: baseline;
+    align-content: center;
     width: 150px;
 }
 
 .noticeDate {
     color: grey;
     font-size: small;
+    margin-top: -5px;
 }
 
 .star {
@@ -119,10 +120,13 @@
 }
 
 .noStar {
-    font-size: x-small;
+    color: white;
+    font-size: small;
     padding: 4px;
     border-radius: 4px;
     align-self: self-end;
+    margin-top: -8px;
+    visibility: hidden;
 }
 
 /* pagination css */

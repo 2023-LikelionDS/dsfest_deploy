@@ -117,7 +117,9 @@ function NoticeList() {
                                             {review.pinned_order !== 0 || '' ? (
                                                 <div className="star">중요</div>
                                             ) : (
-                                                <div className="noStar"></div>
+                                                <div className="noStar">
+                                                    안중
+                                                </div>
                                             )}
                                         </div>
                                     </div>
@@ -176,7 +178,9 @@ function NoticeList() {
                                             {review.pinned_order !== 0 || '' ? (
                                                 <div className="star">중요</div>
                                             ) : (
-                                                <div className="noStar"></div>
+                                                <div className="noStar">
+                                                    안중
+                                                </div>
                                             )}
                                         </div>
                                     </div>

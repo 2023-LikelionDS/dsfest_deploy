@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-import '../css/WriteReviewPage.css'
-import back from "../img/back_purple.png";
+import '../css/WriteReviewPage.css';
+import back from '../img/back_purple.png';
 
 function WriteReviewPage() {
     const [content, setContent] = useState('');
 
     const onClick = () => {
         window.location.href = '/review';
-      };
+    };
 
     const handleSubmit = (e) => {
         if (!content) {
@@ -18,22 +18,22 @@ function WriteReviewPage() {
         }
 
         axios
-            .post('http://localhost:8000/review/', {content})
+            .post('http://localhost:8000/review/', { content })
             .then((response) => {
                 console.log(response.data);
             })
             .catch((error) => {
-            if (error.response && error.response.status === 422) {
-                alert(
-                    '욕설 및 성희롱 관련 단어 필터링 되고있습니다. 바르고 고운말 부탁드립니다'
-                );
-            }
-            console.log(error.response.data);
-        });
+                if (error.response && error.response.status === 422) {
+                    alert(
+                        '욕설 및 성희롱 관련 단어 필터링 되고있습니다. 바르고 고운말 부탁드립니다'
+                    );
+                }
+                console.log(error.response.data);
+            });
 
         e.preventDefault();
         window.location.href = '/review';
-    }
+    };
 
     return (
         <div className="writeReview">
@@ -53,15 +53,12 @@ function WriteReviewPage() {
                 <form className="review-form" onSubmit={handleSubmit}>
                     <textarea
                         type="text"
-                        placeholder="<TAKE:> 후기를 남겨 주세요!"
+                        placeholder="<TAKE:> 후기를 남겨 주세요! [90자 이내로 작성해주세요] "
                         name="content"
                         className="review-content"
                         onChange={(e) => setContent(e.target.value)}
                     />
-                    <button
-                        className="review-post-button"
-                        type="submit"
-                    >
+                    <button className="review-post-button" type="submit">
                         작성 완료
                     </button>
                 </form>

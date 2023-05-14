@@ -75,7 +75,7 @@
 .review-content::placeholder {
     font-family: 'PretendardMedium';
     color: #838383;
-    font-size: 16px;
+    font-size: 13.4px;
 }
 
 .review-content:focus {
@@ -92,6 +92,6 @@
     border: 1px solid #8a4395;
     margin-top: 30px;
     margin-bottom: 80px;
-    background-color: #8A4395;
-    color: #FFFFFF;
+    background-color: #8a4395;
+    color: #ffffff;
 }
