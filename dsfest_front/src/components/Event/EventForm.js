@@ -34,6 +34,13 @@ function EventForm() {
         setContent('');
     };
 
+    const handleAuthorChange = (e) => {
+        const input = e.target.value;
+        if (input.length <= 10) {
+            setAuthor(input);
+        }
+    };
+
     return (
         <div className="sectionbody2">
             <div className="detailsection">
@@ -64,13 +71,21 @@ function EventForm() {
                     <input
                         type="text"
                         value={author}
-                        onChange={(e) => setAuthor(e.target.value)}
+                        onChange={
+                            ((e) => setAuthor(e.target.value),
+                            handleAuthorChange)
+                        }
                         className="form_writer"
                         placeholder="이름"
                     />
                     <textarea
                         value={content}
-                        onChange={(e) => setContent(e.target.value)}
+                        onChange={(e) => {
+                            const text = e.target.value;
+                            if (text.length <= 500) {
+                                setContent(text);
+                            }
+                        }}
                         className="insert"
                         placeholder="나에게 낭만이란?"
                     />
@@ -78,7 +93,7 @@ function EventForm() {
                         낭만 작성 완료
                     </button>
                 </form>
-                <p>*댓글은 수정, 삭제가 불가합니다.</p>
+                <p>* 댓글은 수정, 삭제가 불가합니다.</p>
             </div>
         </div>
     );

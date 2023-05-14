@@ -49,7 +49,7 @@ function Footer() {
                             <li>권희원</li>
                             <li>김채현</li>
                             <li>노하림</li>
-                            <li>허 은</li>
+                            <li>허&nbsp;&nbsp;&nbsp;은</li>
                         </ul>
 
                         <li className="header2">Back-end</li>
