@@ -92,6 +92,14 @@
     border-radius: 8px;
 }
 
+.main-notice:hover, .main-timetable:hover, .main-review:hover, .main-event:hover{
+    background-color: #8a4395;
+    color: #ffffff;
+    .main-content{
+        color: #ffffff;
+    }
+}
+
 .main-title {
     font-family: 'PretendardSemiBold';
     font-size: 18px;
