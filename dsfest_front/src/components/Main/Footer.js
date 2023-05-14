@@ -32,7 +32,7 @@ function Footer() {
                     <ul className="list">
                         <li className="header2">포스터</li>
 
-                        <li>나윤서</li>
+                        <li className="yoon">나윤서</li>
                     </ul>
                 </div>
 
@@ -49,7 +49,7 @@ function Footer() {
                             <li>권희원</li>
                             <li>김채현</li>
                             <li>노하림</li>
-                            <li>허&nbsp;&nbsp;&nbsp;은</li>
+                            <li>허은</li>
                         </ul>
 
                         <li className="header2">Back-end</li>

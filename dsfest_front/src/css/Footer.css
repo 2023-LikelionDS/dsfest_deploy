@@ -26,7 +26,7 @@
 }
 
 .title img {
-    margin-left: 20px;
+    margin-left: 22px;
 }
 
 .Container {
@@ -67,9 +67,14 @@
 .listDetail2 {
     display: flex;
     flex-direction: row;
-    margin-right: 40px;
+    margin-right: 40.2px;
 }
 
 .header2 {
     color: white;
+    margin-left: 1.5px;
+}
+
+.yoon {
+    margin-left: 1.5px;
 }
