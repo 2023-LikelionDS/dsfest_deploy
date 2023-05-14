@@ -65,7 +65,7 @@
     font-size: 16px;
     width: 330px;
     height: 160px;
-    padding: 15px 6px 15px 10px;
+    padding: 12px 0 12px 12px;
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
     resize: none;
@@ -75,7 +75,7 @@
 .review-content::placeholder {
     font-family: 'PretendardMedium';
     color: #838383;
-    font-size: 13.4px;
+    font-size: 16px;
 }
 
 .review-content:focus {
@@ -94,4 +94,12 @@
     margin-bottom: 80px;
     background-color: #8a4395;
     color: #ffffff;
+}
+
+.textCount {
+    position: relative;
+    top: -25px;
+    left: 138px;
+    font-size: 15px;
+    color: #838383;
 }

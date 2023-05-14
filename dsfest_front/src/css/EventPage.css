@@ -259,3 +259,7 @@ textarea {
     background-color: none !important;
     color: #986d9e !important;
 }
+
+textarea::placeholder {
+    font-family: 'Pretendard';
+}

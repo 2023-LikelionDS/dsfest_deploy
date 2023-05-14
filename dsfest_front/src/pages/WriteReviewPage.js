@@ -5,6 +5,7 @@ import back from '../img/back_purple.png';
 
 function WriteReviewPage() {
     const [content, setContent] = useState('');
+    const maxCharacters = 90;
 
     const onClick = () => {
         window.location.href = '/review';
@@ -34,6 +35,12 @@ function WriteReviewPage() {
         e.preventDefault();
         window.location.href = '/review';
     };
+    const handleChange = (e) => {
+        const text = e.target.value;
+        if (text.length <= maxCharacters) {
+            setContent(text);
+        }
+    };
 
     return (
         <div className="writeReview">
@@ -53,11 +60,23 @@ function WriteReviewPage() {
                 <form className="review-form" onSubmit={handleSubmit}>
                     <textarea
                         type="text"
-                        placeholder="<TAKE:> 후기를 남겨 주세요! [90자 이내로 작성해주세요] "
+                        placeholder="<TAKE:> 후기를 남겨 주세요!"
                         name="content"
                         className="review-content"
-                        onChange={(e) => setContent(e.target.value)}
+                        maxLength={maxCharacters + 1}
+                        onChange={
+                            ((e) => setContent(e.target.value), handleChange)
+                        }
+                        ref={(textarea) => {
+                            if (textarea) {
+                                textarea.placeholder =
+                                    '<TAKE:> 후기를 남겨 주세요!';
+                            }
+                        }}
                     />
+                    <div className="textCount">
+                        {content.length}/{maxCharacters}
+                    </div>
                     <button className="review-post-button" type="submit">
                         작성 완료
                     </button>
