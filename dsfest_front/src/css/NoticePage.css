@@ -77,11 +77,10 @@
 }
 
 .noticeImg {
-    background-color: grey;
     width: 150px;
     height: 150px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     align-self: center;
 }
 
@@ -95,7 +94,7 @@
     visibility: hidden;
 }
 .bottomC {
-    margin-top: 7px;
+    margin-top: -5px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -106,7 +105,7 @@
 .noticeDate {
     color: grey;
     font-size: small;
-    margin-top: -5px;
+    margin-top: 4px;
 }
 
 .star {
@@ -228,7 +227,7 @@ ul.pagination li a.active {
     left: -115px;
 }
 .detailC1 {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -280,6 +279,6 @@ ul.pagination li a.active {
     height: fit-content;
     padding: 4px 8px 4px 8px;
     border-radius: 4px;
-    top: -42px;
+    top: -45px;
     left: 250px;
 }

@@ -17,7 +17,7 @@ const NoticeImg = styled.img`
     width: 310px;
     height: 310px;
     border-radius: 10px;
-    background-color: grey;
+
     align-self: center;
 `;
 
