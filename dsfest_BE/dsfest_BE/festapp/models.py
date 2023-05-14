@@ -4,7 +4,7 @@ from django.conf import settings
 
 class Blog(models.Model):
     id = models.BigAutoField(primary_key=True)
-    title = models.CharField(max_length=100, blank=True)
+    title = models.CharField(max_length=14, blank=True)
     body = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     pinned_order = models.IntegerField(default=0)

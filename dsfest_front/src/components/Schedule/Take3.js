@@ -126,13 +126,7 @@ function Take3() {
                     >
                         ~17:00
                     </p>
-                    <Caption
-                        style={{
-                            fontSize: '1px',
-                        }}
-                    >
-                        Chap.3 우리가 써 내려갈 덕성의 한 페이지
-                    </Caption>
+                    <Caption>Chap.3 우리가 써 내려갈 덕성의 한 페이지</Caption>
                 </Card>
                 <Card onClick={toggleHandler}>
                     <p
