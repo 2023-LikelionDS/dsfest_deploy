@@ -269,3 +269,17 @@ ul.pagination li a.active {
     height: 310px;
     margin-bottom: 10px;
 }
+
+.slider-pagination {
+    position: relative;
+    font-size: small;
+    font-weight: 300;
+    background-color: rgba(106, 106, 106, 0.6);
+    color: rgba(255, 255, 255, 1);
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+    top: -42px;
+    left: 250px;
+}

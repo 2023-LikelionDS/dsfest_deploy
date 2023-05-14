@@ -24,6 +24,7 @@ const NoticeImg = styled.img`
 function NoticeDetail() {
     const [detail, setDetail] = useState([]);
     const { id } = useParams();
+    const [currentSlide, setCurrentSlide] = useState(1);
 
     const onClickToList = () => {
         window.location.href = '/notice';
@@ -58,10 +59,12 @@ function NoticeDetail() {
 
     const settings = {
         className: 'slickP',
-        dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        afterChange: (current) => {
+            setCurrentSlide(current + 1);
+        },
     };
 
     return (
@@ -88,6 +91,14 @@ function NoticeDetail() {
                         <NoticeImg src={default_img} />
                     )}
                 </Slider>
+
+                {detail.images && detail.images.length > 0 ? (
+                    <div className="slider-pagination">
+                        &nbsp;{currentSlide} / {detail.images.length || 1}&nbsp;
+                    </div>
+                ) : (
+                    <div className="slider-pagination">&nbsp;1 / 1&nbsp;</div>
+                )}
 
                 <div className="detailC1">
                     <div>
