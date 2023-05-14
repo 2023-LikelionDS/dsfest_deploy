@@ -24,28 +24,29 @@ const Num = styled.div`
     font-family: 'PretendardBold';
 `;
 const TitleText = styled.p`
-    font-weight: 700;
-    color: #444;
     font-size: 90%;
     font-family: 'PretendardBold';
+    color: #4f4f4f;
 `;
 const Poster = styled.img`
     width: 250px;
     margin: 20px;
+    height: 350px;
 `;
 const Bar = styled.div`
     width: 72px;
-    height: 1px;
+    height: 1.5px;
     background-color: #ddd;
 `;
 const TimeTitle = styled.div`
     margin-top: 40px;
-    width: 210px;
+    width: 230px;
     display: flex;
     justify-content: space-between;
     font-size: 10px;
     font-weight: 800;
     font-family: 'PretendardBold';
+    color: #a6a6a6;
 `;
 const Table = styled.div`
     margin: 10px;
@@ -58,9 +59,9 @@ const Table = styled.div`
 const Card = styled.div`
     width: 110px;
     height: 100px;
-    border: 1px solid rgba(188, 188, 188, 0.8);
+    border: 1px solid #cecfcf;
     border-radius: 5px;
-    box-shadow: 0 0 2px rgba(159, 162, 177, 0.8);
+    box-shadow: 0 0 2px #cecfcf;
     position: relative;
     box-sizing: border-box;
     padding-top: 20px;
@@ -71,7 +72,7 @@ const Card = styled.div`
 const Caption = styled.div`
     width: 100%;
     height: 30px;
-    background-color: rgba(159, 162, 177, 0.2);
+    background-color: #e8e8e7;
     position: absolute;
     bottom: 0;
     border-bottom-left-radius: 5px;
@@ -82,6 +83,7 @@ const Caption = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #545656;
 `;
 function Take3() {
     const [isOn, setisOn] = useState(false);
@@ -103,7 +105,9 @@ function Take3() {
                 <Bar />
             </Title>
             <TimeTitle>
-                <p style={{ color: '#0c71ab' }}>영근터 419관</p>
+                <p style={{ color: '#0c71ab', fontFamily: 'PretendardBold' }}>
+                    영근터 419관
+                </p>
                 <p>스탠딩|좌석</p>
             </TimeTitle>
             <Table>
@@ -113,7 +117,7 @@ function Take3() {
                             fontFamily: 'Wix Madefor Display',
                             fontWeight: '600',
                             fontSize: '20px',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         15:00
@@ -134,7 +138,7 @@ function Take3() {
                             fontFamily: 'Wix Madefor Display',
                             fontWeight: '600',
                             fontSize: '20px',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         20:00
@@ -160,7 +164,7 @@ function Take3() {
                             fontWeight: '600',
                             fontSize: '20px',
                             lineHeight: '30px',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         21:00
@@ -179,7 +183,7 @@ function Take3() {
                             fontFamily: 'Wix Madefor Display',
                             fontWeight: '600',
                             fontSize: '20px',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         11:00
@@ -200,7 +204,7 @@ function Take3() {
                             fontFamily: 'Wix Madefor Display',
                             fontWeight: '600',
                             fontSize: '20px',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         16:00

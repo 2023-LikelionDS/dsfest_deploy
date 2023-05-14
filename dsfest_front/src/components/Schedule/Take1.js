@@ -25,27 +25,29 @@ const Num = styled.div`
 `;
 const TitleText = styled.p`
     font-weight: 700;
-    color: #444;
+    color: #4f4f4f;
     font-size: 90%;
     font-family: 'PretendardBold';
 `;
 const Poster = styled.img`
     width: 250px;
     margin: 20px;
+    height: 350px;
 `;
 const Bar = styled.div`
     width: 72px;
-    height: 1px;
+    height: 1.5px;
     background-color: #ddd;
 `;
 const TimeTitle = styled.div`
     margin-top: 40px;
-    width: 210px;
+    width: 230px;
     display: flex;
     justify-content: space-between;
     font-size: 10px;
     font-weight: 800;
     font-family: 'PretendardBold';
+    color: #a6a6a6;
 `;
 const Table = styled.div`
     margin: 10px;
@@ -58,9 +60,9 @@ const Table = styled.div`
 const Card = styled.div`
     width: 110px;
     height: 100px;
-    border: 1px solid rgba(188, 188, 188, 0.8);
+    border: 1px solid #cecfcf;
     border-radius: 5px;
-    box-shadow: 0 0 2px rgba(159, 162, 177, 0.8);
+    box-shadow: 0 0 2px #cecfcf;
     position: relative;
     box-sizing: border-box;
     padding-top: 20px;
@@ -70,16 +72,19 @@ const Card = styled.div`
 `;
 const Caption = styled.div`
     width: 100%;
-    height: 25px;
-    background-color: rgba(159, 162, 177, 0.2);
+    height: 30px;
+    background-color: #e8e8e7;
     position: absolute;
     bottom: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    font-size: 10px;
+    font-size: 5px;
     font-weight: 800;
     text-align: center;
-    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #545656;
 `;
 function Take1() {
     const [isOn, setisOn] = useState(false);
@@ -111,7 +116,7 @@ function Take1() {
                             fontFamily: 'Wix Madefor Display',
                             fontWeight: '600',
                             fontSize: '20px',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         15:00
@@ -132,7 +137,7 @@ function Take1() {
                             fontFamily: 'Wix Madefor Display',
                             fontWeight: '600',
                             fontSize: '20px',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         18:00
@@ -153,7 +158,7 @@ function Take1() {
                             fontFamily: 'Wix Madefor Display',
                             fontSize: '20px',
                             fontWeight: '600',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         20:00
@@ -191,7 +196,7 @@ function Take1() {
                             fontFamily: 'Wix Madefor Display',
                             fontSize: '20px',
                             fontWeight: '600',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         11:00
@@ -212,7 +217,7 @@ function Take1() {
                             fontFamily: 'Wix Madefor Display',
                             fontSize: '20px',
                             fontWeight: '600',
-                            color: '#403f3c',
+                            color: '#545656',
                         }}
                     >
                         16:00
