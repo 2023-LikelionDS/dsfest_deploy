@@ -69,6 +69,7 @@ const Card = styled.div`
     text-align: center;
     font-family: 'PretendardBold';
     background-color: #fff;
+    cursor: pointer;
 `;
 const Caption = styled.div`
     width: 100%;
@@ -88,9 +89,14 @@ const Caption = styled.div`
 `;
 function Take1() {
     const [isOn, setisOn] = useState(false);
+    const [isOnMovie, setisOnMovie] = useState(false);
     const toggleHandler = () => {
         // isOn의 상태를 변경하는 메소드를 구현
         setisOn(!isOn);
+    };
+    const toggleHandler2 = () => {
+        // isOn의 상태를 변경하는 메소드를 구현
+        setisOnMovie(!isOnMovie);
     };
     return (
         <>
@@ -110,7 +116,7 @@ function Take1() {
                 <p>스탠딩|좌석</p>
             </TimeTitle>
             <Table>
-                <Card>
+                <Card onClick={toggleHandler2}>
                     <p
                         style={{
                             fontFamily: 'Wix Madefor Display',
@@ -129,7 +135,11 @@ function Take1() {
                     >
                         ~17:00
                     </p>
-                    <Caption>영화 상영</Caption>
+                    {isOnMovie ? (
+                        <Caption>써니</Caption>
+                    ) : (
+                        <Caption>영화 상영</Caption>
+                    )}
                 </Card>
                 <Card>
                     <p

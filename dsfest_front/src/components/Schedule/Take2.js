@@ -70,6 +70,7 @@ const Card = styled.div`
     text-align: center;
     font-family: 'PretendardBold';
     background-color: #fff;
+    font-size: 13px;
 `;
 const Caption = styled.div`
     width: 100%;
