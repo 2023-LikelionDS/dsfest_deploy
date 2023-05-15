@@ -37,7 +37,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".ap-northeast-2.compute.amazonaws.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -73,7 +73,9 @@ ROOT_URLCONF = 'dsfest_BE.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'frontend', 'build'), 
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/seoul'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -135,7 +137,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'frontend', 'build', 'static'),
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -146,5 +151,6 @@ MEDIA_URL = '/media/'
 
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = ('http://127.0.0.1:3000', 'http://localhost:3000')
+# CORS_ORIGIN_WHITELIST = ('http://127.0.0.1:3000', 'http://localhost:3000', "http://127.0.0.1:8000")
 CORS_ALLOW_CREDENTIALS = True
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
