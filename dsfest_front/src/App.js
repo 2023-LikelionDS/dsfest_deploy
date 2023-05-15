@@ -11,6 +11,12 @@ import Schedule from './pages/SchedulePage';
 import Footer from '../src/components/Main/Footer';
 import Navbar from '../src/components/Main/Navbar';
 import Error from './pages/errorpage';
+import axios from 'axios';
+
+axios.defaults.xsrfCookieName = "csrftoken";
+
+axios.defaults.xsrfHeaderName = "X-CSRFToken"
+
 
 function App() {
     return (
