@@ -48,6 +48,7 @@ const TimeTitle = styled.div`
     font-weight: 800;
     font-family: 'PretendardBold';
     color: #a6a6a6;
+    letter-spacing: -0.5px;
 `;
 const Table = styled.div`
     margin: 10px;
@@ -56,6 +57,7 @@ const Table = styled.div`
     gap: 10px;
     width: 230px;
     flex-wrap: wrap;
+    letter-spacing: -1px;
 `;
 const Card = styled.div`
     width: 110px;
@@ -113,7 +115,15 @@ function Take1() {
             </Title>
             <TimeTitle>
                 <p style={{ color: '#db9112' }}>영근터 419관</p>
-                <p>스탠딩|좌석</p>
+                <p
+                    style={{
+                        fontFamily: 'Pretendard',
+                        fontWeight: '600',
+                        fontSize: '7px',
+                    }}
+                >
+                    스탠딩|좌석
+                </p>
             </TimeTitle>
             <Table>
                 <Card onClick={toggleHandler2}>
@@ -197,7 +207,15 @@ function Take1() {
                 >
                     Pop! Zone
                 </p>
-                <p>4D|더빙</p>
+                <p
+                    style={{
+                        fontFamily: 'Pretendard',
+                        fontWeight: '600',
+                        fontSize: '7px',
+                    }}
+                >
+                    4D|더빙
+                </p>
             </TimeTitle>
             <Table>
                 <Card>
