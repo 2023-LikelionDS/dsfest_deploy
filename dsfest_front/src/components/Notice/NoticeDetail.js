@@ -32,7 +32,7 @@ function NoticeDetail() {
 
     useEffect(() => {
         axios
-            .get(`https://special-chapter-ds.com/${id}`)
+            .get(`https://special-chapter-ds.com/blogs/${id}`)
             .then((response) => {
                 setDetail(response.data);
             })
