@@ -94,12 +94,12 @@ WSGI_APPLICATION = 'dsfest_BE.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+from my_databases import MY_DATABASES
+import pymysql  
+pymysql.version_info = (1, 4, 3, "final", 0)
+pymysql.install_as_MySQLdb()
+
+DATABASES =  MY_DATABASES
 
 
 # Password validation
