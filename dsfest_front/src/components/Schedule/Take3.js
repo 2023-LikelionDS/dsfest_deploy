@@ -79,7 +79,7 @@ const Caption = styled.div`
     bottom: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    font-size: 5px;
+    font-size: 11px;
     font-weight: 800;
     text-align: center;
     display: flex;
@@ -117,7 +117,7 @@ function Take3() {
                         fontSize: '7px',
                     }}
                 >
-                    스탠딩|좌석
+                    스탠딩 | 좌석
                 </p>
             </TimeTitle>
             <Table>
@@ -140,7 +140,9 @@ function Take3() {
                     >
                         ~20:10
                     </p>
-                    <Caption>Chap.3 우리가 써 내려갈 덕성의 한 페이지</Caption>
+                    <Caption>
+                        Chap.3 우리가 써 내려갈<br></br> 덕성의 한 페이지
+                    </Caption>
                 </Card>
                 <Card onClick={toggleHandler}>
                     <p
@@ -191,7 +193,7 @@ function Take3() {
                         fontSize: '7px',
                     }}
                 >
-                    4D|더빙
+                    4D | 더빙
                 </p>
             </TimeTitle>
             <Table>

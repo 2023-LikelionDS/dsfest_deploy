@@ -5,7 +5,9 @@
         background-color: #986d9e;
     }
 }
-
+* {
+    font-family: 'Pretendard';
+}
 .footerContainer {
     background-color: #986d9e;
     display: flex;

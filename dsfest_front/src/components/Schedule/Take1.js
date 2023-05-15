@@ -81,7 +81,7 @@ const Caption = styled.div`
     bottom: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    font-size: 5px;
+    font-size: 11px;
     font-weight: 800;
     text-align: center;
     display: flex;
@@ -122,7 +122,7 @@ function Take1() {
                         fontSize: '7px',
                     }}
                 >
-                    스탠딩|좌석
+                    스탠딩 | 좌석
                 </p>
             </TimeTitle>
             <Table>
@@ -214,7 +214,7 @@ function Take1() {
                         fontSize: '7px',
                     }}
                 >
-                    4D|더빙
+                    4D | 더빙
                 </p>
             </TimeTitle>
             <Table>
