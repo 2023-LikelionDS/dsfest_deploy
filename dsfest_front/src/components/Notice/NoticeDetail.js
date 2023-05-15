@@ -11,7 +11,7 @@ import default_img from '../../img/default_image.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
-const DEFAULT_IMG_URL = 'http://localhost:8000';
+const DEFAULT_IMG_URL = 'https://special-chapter-ds.com';
 
 const NoticeImg = styled.img`
     width: 310px;
@@ -32,7 +32,7 @@ function NoticeDetail() {
 
     useEffect(() => {
         axios
-            .get(`http://127.0.0.1:8000/blogs/${id}`)
+            .get(`https://special-chapter-ds.com/${id}`)
             .then((response) => {
                 setDetail(response.data);
             })

@@ -16,7 +16,7 @@ function EventForm() {
         const newNangman = { author, content };
 
         axios
-            .post('http://localhost:8000/event/', newNangman)
+            .post('https://special-chapter-ds.com/event/', newNangman)
             .then((response) => {
                 console.log(response.data);
             })

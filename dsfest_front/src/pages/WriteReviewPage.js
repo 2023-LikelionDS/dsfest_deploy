@@ -19,7 +19,7 @@ function WriteReviewPage() {
         }
 
         axios
-            .post('http://localhost:8000/review/', { content })
+            .post('https://special-chapter-ds.com/review/', { content })
             .then((response) => {
                 console.log(response.data);
             })

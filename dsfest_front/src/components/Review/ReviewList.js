@@ -15,7 +15,7 @@ function ReviewList() {
 
   useEffect(() => {
     axios
-        .get('http://127.0.0.1:8000/review/')
+        .get('https://special-chapter-ds.com/review/')
         .then((response) => {
           setReviews(response.data);
         })

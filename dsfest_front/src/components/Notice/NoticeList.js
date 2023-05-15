@@ -11,7 +11,7 @@ function NoticeList() {
 
     useEffect(() => {
         axios
-            .get('http://127.0.0.1:8000/blog/')
+            .get('https://special-chapter-ds.com/blog/')
             .then((response) => {
                 setNotice(response.data);
             })
@@ -78,7 +78,7 @@ function NoticeList() {
                                     >
                                         {review.images.length !== 0 ? (
                                             <img
-                                                src={`http://localhost:8000${review.images[0].image}`}
+                                                src={`https://special-chapter-ds.com${review.images[0].image}`}
                                                 className="noticeImg"
                                                 alt="thumnail"
                                             />
@@ -139,7 +139,7 @@ function NoticeList() {
                                     >
                                         {review.images.length !== 0 ? (
                                             <img
-                                                src={`http://localhost:8000${review.images[0].image}`}
+                                                src={`https://special-chapter-ds.com${review.images[0].image}`}
                                                 className="noticeImg"
                                                 alt="thumnail"
                                             />

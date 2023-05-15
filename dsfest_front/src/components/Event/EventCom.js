@@ -9,7 +9,7 @@ function EventCom() {
 
     useEffect(() => {
         axios
-            .get('http://localhost:8000/event/')
+            .get('https://special-chapter-ds.com/event/')
             .then((response) => {
                 setNangmans(response.data);
             })
