@@ -81,7 +81,7 @@ const Caption = styled.div`
     bottom: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    font-size: 11px;
+    font-size: 7px;
     font-weight: 800;
     text-align: center;
     display: flex;
