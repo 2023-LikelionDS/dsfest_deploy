@@ -92,18 +92,18 @@ function NoticeList() {
 
                                         <div className="noticeTitle">
                                             <div>
-                                                {review.title.length > 10
+                                                {review.title.length > 7
                                                     ? review.title.substring(
                                                           0,
-                                                          10
+                                                          7
                                                       ) + '...'
                                                     : review.title}
                                             </div>
                                             <div className="invTitle">
-                                                {review.title.length > 10
+                                                {review.title.length > 7
                                                     ? review.title.substring(
                                                           0,
-                                                          10
+                                                          7
                                                       ) + '...'
                                                     : review.title}
                                             </div>
@@ -152,18 +152,18 @@ function NoticeList() {
                                         )}
                                         <div className="noticeTitle">
                                             <div>
-                                                {review.title.length > 10
+                                                {review.title.length > 7
                                                     ? review.title.substring(
                                                           0,
-                                                          10
+                                                          7
                                                       ) + '...'
                                                     : review.title}
                                             </div>
                                             <div className="invTitle">
-                                                {review.title.length > 10
+                                                {review.title.length > 7
                                                     ? review.title.substring(
                                                           0,
-                                                          10
+                                                          7
                                                       ) + '...'
                                                     : review.title}
                                             </div>
