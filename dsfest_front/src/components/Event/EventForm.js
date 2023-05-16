@@ -21,7 +21,6 @@ function EventForm() {
     const handleSubmit = (e) => {
         if (!author || !content) {
             alert('내용을 입력해주세요.');
-            e.preventDefault();
             return;
         }
 
