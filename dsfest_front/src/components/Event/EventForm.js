@@ -30,6 +30,11 @@ function EventForm() {
             .post('https://special-chapter-ds.com/event/', { author, content })
             .then((response) => {
                 console.log(response.data);
+
+                // 입력 완료 후 초기화
+                setAuthor('');
+                setContent('');
+                window.location.reload();
             })
             .catch((error) => {
                 if (error.response && error.response.status === 422) {
@@ -39,10 +44,6 @@ function EventForm() {
                 }
                 console.log(error.response.data);
             });
-
-        // 입력 완료 후 초기화
-        setAuthor('');
-        setContent('');
     };
 
     const handleAuthorChange = (e) => {

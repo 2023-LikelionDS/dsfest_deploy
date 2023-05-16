@@ -1,4 +1,4 @@
-/*! For license information please see main.c1fffba0.js.LICENSE.txt */
+/*! For license information please see main.2c5bb74c.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -21843,13 +21843,16 @@
                       onSubmit: function (e) {
                         e.preventDefault(),
                           n && i
-                            ? (za
+                            ? za
                                 .post("https://special-chapter-ds.com/event/", {
                                   author: n,
                                   content: i,
                                 })
                                 .then(function (e) {
-                                  console.log(e.data);
+                                  console.log(e.data),
+                                    r(""),
+                                    o(""),
+                                    window.location.reload();
                                 })
                                 .catch(function (e) {
                                   e.response &&
@@ -21858,9 +21861,7 @@
                                       "\uc695\uc124 \ubc0f \uc131\ud76c\ub871 \uad00\ub828 \ub2e8\uc5b4 \ud544\ud130\ub9c1 \ub418\uace0\uc788\uc2b5\ub2c8\ub2e4. \ubc14\ub974\uace0 \uace0\uc6b4\ub9d0 \ubd80\ud0c1\ub4dc\ub9bd\ub2c8\ub2e4."
                                     ),
                                     console.log(e.response.data);
-                                }),
-                              r(""),
-                              o(""))
+                                })
                             : alert(
                                 "\ub0b4\uc6a9\uc744 \uc785\ub825\ud574\uc8fc\uc138\uc694."
                               );
@@ -26903,4 +26904,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.c1fffba0.js.map
+//# sourceMappingURL=main.2c5bb74c.js.map
