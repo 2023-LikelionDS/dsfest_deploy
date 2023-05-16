@@ -152,7 +152,7 @@ function Take2() {
                             color: '#545656',
                         }}
                     >
-                        20:00
+                        20:30
                     </p>
                     <p
                         style={{
