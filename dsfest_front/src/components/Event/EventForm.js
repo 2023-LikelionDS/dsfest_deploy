@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../css/EventPage.css';
 
 function EventForm() {
     const [author, setAuthor] = useState('');
     const [content, setContent] = useState('');
+
+    useEffect(() => {
+        axios
+            .get('https://special-chapter-ds.com/csrf_cookie/')
+            .then((response) => {
+                axios.defaults.headers.common['X-CSRFToken'] =
+                    response.data.csrftoken;
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, []);
 
     const handleSubmit = (e) => {
         if (!author || !content) {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../css/WriteReviewPage.css';
 import back from '../img/back_purple.png';
@@ -7,14 +7,28 @@ function WriteReviewPage() {
     const [content, setContent] = useState('');
     const maxCharacters = 90;
 
+    useEffect(() => {
+        // Django에서 CSRF 토큰을 쿠키로 받아옵니다.
+        axios
+            .get('https://special-chapter-ds.com/csrf_cookie/')
+            .then((response) => {
+                // axios 인스턴스에 CSRF 토큰을 설정합니다.
+                axios.defaults.headers.common['X-CSRFToken'] =
+                    response.data.csrftoken;
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, []);
+
     const onClick = () => {
         window.location.href = '/review';
     };
 
     const handleSubmit = (e) => {
+        e.preventDefault();
         if (!content) {
             alert('내용을 입력해주세요.');
-            e.preventDefault();
             return;
         }
 
@@ -22,6 +36,7 @@ function WriteReviewPage() {
             .post('https://special-chapter-ds.com/review/', { content })
             .then((response) => {
                 console.log(response.data);
+                window.location.href = '/review';
             })
             .catch((error) => {
                 if (error.response && error.response.status === 422) {
@@ -31,10 +46,8 @@ function WriteReviewPage() {
                 }
                 console.log(error.response.data);
             });
-
-        e.preventDefault();
-        window.location.href = '/review';
     };
+
     const handleChange = (e) => {
         const text = e.target.value;
         if (text.length <= maxCharacters) {
@@ -64,9 +77,8 @@ function WriteReviewPage() {
                         name="content"
                         className="review-content"
                         maxLength={maxCharacters}
-                        onChange={
-                            ((e) => setContent(e.target.value), handleChange)
-                        }
+                        value={content}
+                        onChange={handleChange}
                         ref={(textarea) => {
                             if (textarea) {
                                 textarea.placeholder =
