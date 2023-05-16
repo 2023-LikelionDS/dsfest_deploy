@@ -1,4 +1,4 @@
-/*! For license information please see main.2c5bb74c.js.LICENSE.txt */
+/*! For license information please see main.6e7d4459.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -19665,7 +19665,9 @@
                 (0, Vn.jsxs)("div", {
                   className: "main-event",
                   onClick: function () {
-                    return e(4);
+                    alert(
+                      "5\uc6d4 19\uc77c \ub300\uac1c\ubd09~! Coming sooooon"
+                    );
                   },
                   children: [
                     (0, Vn.jsx)("div", {
@@ -25794,7 +25796,7 @@
         su = On.div(
           Js ||
             (Js = Dn([
-              "\n    margin-top: 40px;\n    width: 230px;\n    display: flex;\n    justify-content: space-between;\n    font-size: 10px;\n    font-weight: 800;\n    font-family: 'PretendardBold';\n    color: #a6a6a6;\n    letter-spacing: -0.5px;\n",
+              "\n    margin-top: 40px;\n    width: 230px;\n    display: flex;\n    justify-content: space-between;\n    font-size: 11px;\n    font-weight: 800;\n    font-family: 'PretendardBold';\n    color: #a6a6a6;\n    letter-spacing: -0.5px;\n",
             ]))
         ),
         uu = On.div(
@@ -25812,7 +25814,7 @@
         fu = On.div(
           eu ||
             (eu = Dn([
-              "\n    width: 100%;\n    height: 30px;\n    background-color: #e8e8e7;\n    position: absolute;\n    bottom: 0;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    font-size: 7px;\n    font-weight: 800;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #545656;\n",
+              "\n    width: 100%;\n    height: 30px;\n    background-color: #e8e8e7;\n    position: absolute;\n    bottom: 0;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    font-size: 9px;\n    font-weight: 800;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #545656;\n",
             ]))
         );
       var du,
@@ -26817,11 +26819,14 @@
                             }),
                           }),
                           (0, Vn.jsx)(Qe, {
-                            to: "/event",
                             className: function (e) {
                               return e.isActive ? "navActive" : "nav";
                             },
-                            onClick: i,
+                            onClick: function () {
+                              alert(
+                                "5\uc6d4 19\uc77c \ub300\uac1c\ubd09~! Coming sooooon"
+                              );
+                            },
                             children: (0, Vn.jsx)("li", {
                               className: "NavItem",
                               children: "\ub0ad\ub9cc\uc5d0 \ub300\ud558\uc5ec",
@@ -26904,4 +26909,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.2c5bb74c.js.map
+//# sourceMappingURL=main.6e7d4459.js.map

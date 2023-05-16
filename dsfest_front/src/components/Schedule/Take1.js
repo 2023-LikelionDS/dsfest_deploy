@@ -44,7 +44,7 @@ const TimeTitle = styled.div`
     width: 230px;
     display: flex;
     justify-content: space-between;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 800;
     font-family: 'PretendardBold';
     color: #a6a6a6;
@@ -81,7 +81,7 @@ const Caption = styled.div`
     bottom: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    font-size: 7px;
+    font-size: 9px;
     font-weight: 800;
     text-align: center;
     display: flex;

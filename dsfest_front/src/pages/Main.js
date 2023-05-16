@@ -49,6 +49,9 @@ function Main() {
             window.location.href = '/event';
         }
     };
+    const handleEvent = () => {
+        alert('5월 19일 대개봉~! Coming sooooon');
+    };
 
     const settings = {
         dots: true,
@@ -95,7 +98,11 @@ function Main() {
                     </div>
                     <img className="main-review-img" src={popcorn} alt="사진" />
                 </div>
-                <div className="main-event" onClick={() => handleClick(4)}>
+                <div
+                    className="main-event"
+                    // onClick={() => handleClick(4)}
+                    onClick={handleEvent}
+                >
                     <div className="main-title">낭만에 대하여</div>
                     <div className="main-content">5월 19일 개봉</div>
                     <img className="main-event-img" src={letter} alt="사진" />
