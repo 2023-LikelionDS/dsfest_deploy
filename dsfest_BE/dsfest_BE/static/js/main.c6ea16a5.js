@@ -1,4 +1,4 @@
-/*! For license information please see main.6e7d4459.js.LICENSE.txt */
+/*! For license information please see main.c6ea16a5.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -25796,7 +25796,7 @@
         su = On.div(
           Js ||
             (Js = Dn([
-              "\n    margin-top: 40px;\n    width: 230px;\n    display: flex;\n    justify-content: space-between;\n    font-size: 11px;\n    font-weight: 800;\n    font-family: 'PretendardBold';\n    color: #a6a6a6;\n    letter-spacing: -0.5px;\n",
+              "\n    margin-top: 40px;\n    width: 230px;\n    display: flex;\n    justify-content: space-between;\n    font-size: 11px;\n    font-weight: 700;\n    font-family: 'PretendardBold';\n    color: #a6a6a6;\n    letter-spacing: -0.5px;\n",
             ]))
         ),
         uu = On.div(
@@ -25814,7 +25814,7 @@
         fu = On.div(
           eu ||
             (eu = Dn([
-              "\n    width: 100%;\n    height: 30px;\n    background-color: #e8e8e7;\n    position: absolute;\n    bottom: 0;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    font-size: 9px;\n    font-weight: 800;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #545656;\n",
+              "\n    width: 100%;\n    height: 30px;\n    background-color: #e8e8e7;\n    position: absolute;\n    bottom: 0;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    font-size: 10px;\n    font-weight: 600;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #545656;\n",
             ]))
         );
       var du,
@@ -26055,7 +26055,7 @@
         ju = On.div(
           gu ||
             (gu = Dn([
-              "\n    margin-top: 40px;\n    width: 230px;\n    display: flex;\n    justify-content: space-between;\n    font-size: 10px;\n    font-weight: 800;\n    font-family: 'PretendardBold';\n    color: #a6a6a6;\n    letter-spacing: -0.5px;\n",
+              "\n    margin-top: 40px;\n    width: 230px;\n    display: flex;\n    justify-content: space-between;\n    font-size: 11px;\n    font-weight: 700;\n    font-family: 'PretendardBold';\n    color: #a6a6a6;\n    letter-spacing: -0.5px;\n",
             ]))
         ),
         Pu = On.div(
@@ -26073,7 +26073,7 @@
         Tu = On.div(
           Au ||
             (Au = Dn([
-              "\n    width: 100%;\n    height: 30px;\n    background-color: #e8e8e7;\n    position: absolute;\n    bottom: 0;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    font-size: 7px;\n    font-weight: 800;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #545656;\n",
+              "\n    width: 100%;\n    height: 30px;\n    background-color: #e8e8e7;\n    position: absolute;\n    bottom: 0;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    font-size: 10px;\n    font-weight: 600;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #545656;\n",
             ]))
         );
       var Nu,
@@ -26282,7 +26282,7 @@
         Ku = On.div(
           Lu ||
             (Lu = Dn([
-              "\n    margin-top: 40px;\n    width: 230px;\n    display: flex;\n    justify-content: space-between;\n    font-size: 10px;\n    font-weight: 800;\n    font-family: 'PretendardBold';\n    color: #a6a6a6;\n    letter-spacing: -0.5px;\n",
+              "\n    margin-top: 40px;\n    width: 230px;\n    display: flex;\n    justify-content: space-between;\n    font-size: 11px;\n    font-weight: 700;\n    font-family: 'PretendardBold';\n    color: #a6a6a6;\n    letter-spacing: -0.5px;\n",
             ]))
         ),
         Vu = On.div(
@@ -26300,7 +26300,7 @@
         $u = On.div(
           Fu ||
             (Fu = Dn([
-              "\n    width: 100%;\n    height: 30px;\n    background-color: #e8e8e7;\n    position: absolute;\n    bottom: 0;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    font-size: 7px;\n    font-weight: 800;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #545656;\n",
+              "\n    width: 100%;\n    height: 30px;\n    background-color: #e8e8e7;\n    position: absolute;\n    bottom: 0;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    font-size: 10px;\n    font-weight: 600;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: #545656;\n",
             ]))
         );
       var Ju,
@@ -26819,9 +26819,6 @@
                             }),
                           }),
                           (0, Vn.jsx)(Qe, {
-                            className: function (e) {
-                              return e.isActive ? "navActive" : "nav";
-                            },
                             onClick: function () {
                               alert(
                                 "5\uc6d4 19\uc77c \ub300\uac1c\ubd09~! Coming sooooon"
@@ -26909,4 +26906,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.6e7d4459.js.map
+//# sourceMappingURL=main.c6ea16a5.js.map

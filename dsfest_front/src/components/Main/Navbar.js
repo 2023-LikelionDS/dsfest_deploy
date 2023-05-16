@@ -74,9 +74,9 @@ const Menubar = () => {
                         </NavLink>
                         <NavLink
                             // to="/event"
-                            className={({ isActive }) =>
-                                isActive ? 'navActive' : 'nav'
-                            }
+                            // className={({ isActive }) =>
+                            //     isActive ? 'navActive' : 'nav'
+                            // }
                             // onClick={menuClose}
                             onClick={handleClick}
                         >
