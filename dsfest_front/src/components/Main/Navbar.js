@@ -79,6 +79,7 @@ const Menubar = () => {
                             // }
                             // onClick={menuClose}
                             onClick={handleClick}
+                            className={'comingsoon'}
                         >
                             <li className="NavItem">낭만에 대하여</li>
                         </NavLink>

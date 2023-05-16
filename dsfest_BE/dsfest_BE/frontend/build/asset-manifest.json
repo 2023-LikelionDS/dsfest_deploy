@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb7cd0d6.css",
-    "main.js": "/static/js/main.c6ea16a5.js",
+    "main.css": "/static/css/main.a980649b.css",
+    "main.js": "/static/js/main.ba02e522.js",
     "static/media/Pretendard-Regular.ttf": "/static/media/Pretendard-Regular.7c20008ec8c0968904c4.ttf",
     "static/media/Pretendard-Medium.ttf": "/static/media/Pretendard-Medium.a55315616a247a625bea.ttf",
     "static/media/Pretendard-SemiBold.ttf": "/static/media/Pretendard-SemiBold.224f934d4160c1ea26e2.ttf",
@@ -48,11 +48,11 @@
     "static/media/1-purple1.svg": "/static/media/1-purple1.85175993e44461c9ca7503a3ac9d9b54.svg",
     "index.html": "/index.html",
     "static/media/1-roundback.svg": "/static/media/1-roundback.bec10bdb23aaa78af9b7edacecb63ebd.svg",
-    "main.fb7cd0d6.css.map": "/static/css/main.fb7cd0d6.css.map",
-    "main.c6ea16a5.js.map": "/static/js/main.c6ea16a5.js.map"
+    "main.a980649b.css.map": "/static/css/main.a980649b.css.map",
+    "main.ba02e522.js.map": "/static/js/main.ba02e522.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb7cd0d6.css",
-    "static/js/main.c6ea16a5.js"
+    "static/css/main.a980649b.css",
+    "static/js/main.ba02e522.js"
   ]
 }

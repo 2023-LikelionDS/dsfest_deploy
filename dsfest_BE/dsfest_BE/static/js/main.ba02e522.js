@@ -1,4 +1,4 @@
-/*! For license information please see main.c6ea16a5.js.LICENSE.txt */
+/*! For license information please see main.ba02e522.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -26824,6 +26824,7 @@
                                 "5\uc6d4 19\uc77c \ub300\uac1c\ubd09~! Coming sooooon"
                               );
                             },
+                            className: "comingsoon",
                             children: (0, Vn.jsx)("li", {
                               className: "NavItem",
                               children: "\ub0ad\ub9cc\uc5d0 \ub300\ud558\uc5ec",
@@ -26906,4 +26907,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.c6ea16a5.js.map
+//# sourceMappingURL=main.ba02e522.js.map

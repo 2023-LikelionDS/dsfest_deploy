@@ -82,6 +82,14 @@
     transition: all 0.3s ease-in-out;
     background-color: #713570;
 }
+
+.comingsoon {
+    color: #838383;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .navActive {
     color: #8a4395 !important;
     text-decoration: none;
