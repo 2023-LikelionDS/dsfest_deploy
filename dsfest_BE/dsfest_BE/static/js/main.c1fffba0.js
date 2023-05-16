@@ -1,4 +1,4 @@
-/*! For license information please see main.f2353fe6.js.LICENSE.txt */
+/*! For license information please see main.c1fffba0.js.LICENSE.txt */
 !(function () {
   var e = {
       1694: function (e, t) {
@@ -21841,27 +21841,29 @@
                     (0, Vn.jsxs)("form", {
                       className: "form_inner",
                       onSubmit: function (e) {
-                        if (n && i) {
-                          var t = { author: n, content: i };
-                          za
-                            .post("https://special-chapter-ds.com/event/", t)
-                            .then(function (e) {
-                              console.log(e.data);
-                            })
-                            .catch(function (e) {
-                              e.response &&
-                                422 === e.response.status &&
-                                alert(
-                                  "\uc695\uc124 \ubc0f \uc131\ud76c\ub871 \uad00\ub828 \ub2e8\uc5b4 \ud544\ud130\ub9c1 \ub418\uace0\uc788\uc2b5\ub2c8\ub2e4. \ubc14\ub974\uace0 \uace0\uc6b4\ub9d0 \ubd80\ud0c1\ub4dc\ub9bd\ub2c8\ub2e4."
-                                ),
-                                console.log(e.response.data);
-                            }),
-                            r(""),
-                            o("");
-                        } else
-                          alert(
-                            "\ub0b4\uc6a9\uc744 \uc785\ub825\ud574\uc8fc\uc138\uc694."
-                          );
+                        e.preventDefault(),
+                          n && i
+                            ? (za
+                                .post("https://special-chapter-ds.com/event/", {
+                                  author: n,
+                                  content: i,
+                                })
+                                .then(function (e) {
+                                  console.log(e.data);
+                                })
+                                .catch(function (e) {
+                                  e.response &&
+                                    422 === e.response.status &&
+                                    alert(
+                                      "\uc695\uc124 \ubc0f \uc131\ud76c\ub871 \uad00\ub828 \ub2e8\uc5b4 \ud544\ud130\ub9c1 \ub418\uace0\uc788\uc2b5\ub2c8\ub2e4. \ubc14\ub974\uace0 \uace0\uc6b4\ub9d0 \ubd80\ud0c1\ub4dc\ub9bd\ub2c8\ub2e4."
+                                    ),
+                                    console.log(e.response.data);
+                                }),
+                              r(""),
+                              o(""))
+                            : alert(
+                                "\ub0b4\uc6a9\uc744 \uc785\ub825\ud574\uc8fc\uc138\uc694."
+                              );
                       },
                       children: [
                         (0, Vn.jsx)("input", {
@@ -26901,4 +26903,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.f2353fe6.js.map
+//# sourceMappingURL=main.c1fffba0.js.map
