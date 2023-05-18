@@ -49,9 +49,9 @@ function Main() {
             window.location.href = '/event';
         }
     };
-    const handleEvent = () => {
-        alert('5월 19일 대개봉~! Coming sooooon');
-    };
+    // const handleEvent = () => {
+    //     alert('5월 19일 대개봉~! Coming sooooon');
+    // };
 
     const settings = {
         dots: true,
@@ -100,8 +100,8 @@ function Main() {
                 </div>
                 <div
                     className="main-event"
-                    // onClick={() => handleClick(4)}
-                    onClick={handleEvent}
+                    onClick={() => handleClick(4)}
+                    // onClick={handleEvent} 5/19일 이전
                 >
                     <div className="main-title">낭만에 대하여</div>
                     <div className="main-content">5월 19일 개봉</div>

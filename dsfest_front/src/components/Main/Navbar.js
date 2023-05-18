@@ -12,9 +12,9 @@ const Menubar = () => {
     const menuClose = useCallback((e) => {
         setMenuActive(false);
     });
-    const handleClick = () => {
-        alert('5월 19일 대개봉~! Coming sooooon');
-    };
+    // const handleClick = () => {
+    //     alert('5월 19일 대개봉~! Coming sooooon');
+    // };
 
     // 스크롤 시, 네브바 닫힘
     useEffect(() => {
@@ -73,13 +73,13 @@ const Menubar = () => {
                             <li className="NavItem n_item1">상영작 후기</li>
                         </NavLink>
                         <NavLink
-                            // to="/event"
-                            // className={({ isActive }) =>
-                            //     isActive ? 'navActive' : 'nav'
-                            // }
-                            // onClick={menuClose}
-                            onClick={handleClick}
-                            className={'comingsoon'}
+                            to="/event"
+                            className={({ isActive }) =>
+                                isActive ? 'navActive' : 'nav'
+                            }
+                            onClick={menuClose}
+                            // onClick={handleClick}
+                            // className={'comingsoon'}
                         >
                             <li className="NavItem">낭만에 대하여</li>
                         </NavLink>
